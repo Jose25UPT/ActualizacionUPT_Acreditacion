@@ -1,122 +1,124 @@
 /* ============================================
-   INTERACTIVIDAD - JAVASCRIPT HUMANIZADO
+   INTERACTIVIDAD - REDISENO UPT
    ============================================ */
 
 document.documentElement.classList.add('js');
 
-// ============ MENÚ MÓVIL ============
+const header = document.querySelector('.header');
 const navToggle = document.querySelector('.nav-toggle');
 const navMain = document.querySelector('.nav-main');
 const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const mediaMobile = window.matchMedia('(max-width: 860px)');
+
+const toggleHeaderState = () => {
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 12);
+};
+
+const closeMobileNav = () => {
+  if (!navToggle || !navMain) return;
+  navToggle.classList.remove('active');
+  navMain.classList.remove('active');
+  navToggle.setAttribute('aria-expanded', 'false');
+};
 
 if (navToggle && navMain) {
+  navToggle.setAttribute('aria-expanded', 'false');
+
   navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    navMain.classList.toggle('active');
+    const isActive = navMain.classList.toggle('active');
+    navToggle.classList.toggle('active', isActive);
+    navToggle.setAttribute('aria-expanded', String(isActive));
   });
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.classList.remove('active');
-      navMain.classList.remove('active');
+  navLinks.forEach((link) => {
+    link.addEventListener('click', closeMobileNav);
+  });
+}
+
+dropdownToggles.forEach((toggle) => {
+  toggle.addEventListener('click', (event) => {
+    if (!mediaMobile.matches) return;
+
+    event.preventDefault();
+    const parent = toggle.closest('.nav-dropdown');
+    const menu = parent ? parent.querySelector('.dropdown-menu') : null;
+    if (!menu) return;
+
+    document.querySelectorAll('.dropdown-menu').forEach((item) => {
+      if (item !== menu) item.classList.remove('active');
     });
-  });
-}
 
-// ============ DROPDOWN MENU MÓVIL ============
-dropdownToggles.forEach(toggle => {
-  toggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      const parent = toggle.closest('.nav-dropdown');
-      const menu = parent.querySelector('.dropdown-menu');
-      
-      // Cerrar otros dropdowns
-      document.querySelectorAll('.dropdown-menu').forEach(m => {
-        if (m !== menu) m.classList.remove('active');
-      });
-      
-      menu.classList.toggle('active');
-    }
+    menu.classList.toggle('active');
   });
 });
 
-// ============ SMOOTH SCROLL ============
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function onAnchorClick(event) {
     const href = this.getAttribute('href');
-    if (href !== '#') {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }
+    if (!href || href === '#') return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 
-// ============ SCROLL REVEAL CON INTERSECTION OBSERVER ============
-const observerOptions = {
-  threshold: 0.15,
-  rootMargin: '0px 0px -50px 0px'
-};
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (!entry.isIntersecting) return;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      // Asignar delay escalonado
-      const delay = ((index % 4) + 1) * 100;
-      entry.target.style.animationDelay = delay + 'ms';
+      entry.target.style.transitionDelay = `${Math.min(index * 60, 240)}ms`;
       entry.target.classList.add('is-visible');
-    }
-  });
-}, observerOptions);
+      revealObserver.unobserve(entry.target);
+    });
+  },
+  { threshold: 0.16, rootMargin: '0px 0px -42px 0px' }
+);
 
-// Aplicar observer a elementos con animación
-document.querySelectorAll('.card, .perfil-item, .objetivo-card, .atributo-box, .timeline-item, .competencia-box, .stats-box, .credential-badge').forEach(el => {
-  observer.observe(el);
-});
+document
+  .querySelectorAll('.card, .perfil-item, .objetivo-card, .atributo-box, .timeline-item, .competencia-box, .credential-badge, .plan-column')
+  .forEach((element) => revealObserver.observe(element));
 
-// ============ ACTIVE NAV TRACKING ============
-const navTrackingOptions = {
-  threshold: 0.5,
-  rootMargin: '-60px 0px -50%'
-};
+const navTracker = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
 
-const navTracker = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
       const id = entry.target.getAttribute('id');
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${id}`) {
-          link.classList.add('active');
-        }
-      });
-    }
-  });
-}, navTrackingOptions);
+      if (!id) return;
 
-// Rastrear todas las secciones con id
-document.querySelectorAll('section[id], footer, .final-cta').forEach(section => {
-  navTracker.observe(section);
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    });
+  },
+  { threshold: 0.5, rootMargin: '-76px 0px -45%' }
+);
+
+document.querySelectorAll('section[id]').forEach((section) => navTracker.observe(section));
+
+document.addEventListener('click', (event) => {
+  if (!mediaMobile.matches) return;
+  if (!navMain || !navMain.classList.contains('active')) return;
+  if (event.target.closest('.header-container')) return;
+  closeMobileNav();
 });
 
-// ============ RESPETO A PREFERENCIA DE MOVIMIENTO REDUCIDO ============
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if (prefersReducedMotion) {
-  document.documentElement.style.scrollBehavior = 'auto';
-  document.querySelectorAll('*').forEach(el => {
-    el.style.animationDuration = '0.01ms !important';
-    el.style.transitionDuration = '0.01ms !important';
-  });
-}
+window.addEventListener('resize', () => {
+  if (!mediaMobile.matches) {
+    closeMobileNav();
+    document.querySelectorAll('.dropdown-menu').forEach((menu) => menu.classList.remove('active'));
+  }
+});
 
-// ============ CARGAR MENSAJE DE CONFIRMACIÓN ============
+window.addEventListener('scroll', toggleHeaderState, { passive: true });
+toggleHeaderState();
+
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('✓ EPIS UPT - Diseño Acreditación 2026 cargado correctamente');
+  console.log('EPIS UPT 2026: rediseño visual cargado');
 });
