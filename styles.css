@@ -104,14 +104,6 @@ a {
   object-fit: contain;
 }
 
-.brand-logo--secondary {
-  height: 44px;
-  padding: 4px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(12, 41, 82, 0.1);
-}
-
 .brand-info {
   display: grid;
   gap: 0.15rem;
@@ -951,11 +943,6 @@ a {
   background: rgba(255, 255, 255, 0.9);
 }
 
-.footer-logo--upt {
-  width: 42px;
-  height: 42px;
-}
-
 .footer-section p,
 .footer-section li,
 .footer-section a {
@@ -1053,10 +1040,6 @@ a {
 
   .brand-logo {
     height: 42px;
-  }
-
-  .brand-logo--secondary {
-    height: 36px;
   }
 
   .brand-name {
