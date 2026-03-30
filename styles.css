@@ -454,14 +454,150 @@ body {
 }
 
 /* ============================================
+   ACREDITACIÓN DESTACADA
+   ============================================ */
+
+.accreditation-hero {
+  background: linear-gradient(135deg, var(--upt-primary) 0%, var(--accent) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.accreditation-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.accreditation-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.accreditation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.accreditation-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.accreditation-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accreditation-desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+  max-width: 450px;
+}
+
+.accreditation-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.badge-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.badge-icon {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.badge-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.accreditation-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icacit-logo {
+  width: 140px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 1.5rem;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.accreditation-seal {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.95;
+}
+
+/* ============================================
    CREDENCIALES
    ============================================ */
 
 .credentials {
-  background: var(--upt-primary);
-  color: white;
+  background: #f8fafc;
+  color: var(--text-primary);
   padding: 4rem 2rem;
-  border-top: 4px solid var(--upt-dark);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .credentials-inner {
@@ -471,37 +607,63 @@ body {
 
 .credentials-inner h3 {
   font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  opacity: 0.95;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--text-primary);
 }
 
 .credentials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .credential-badge {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
   text-align: center;
+  border: 2px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.credential-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 82, 163, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.credential-badge:hover {
+  border-color: var(--upt-primary);
+  box-shadow: 0 12px 30px rgba(0, 82, 163, 0.15);
+  transform: translateY(-8px);
+}
+
+.credential-badge:hover::before {
+  left: 100%;
 }
 
 .credential-badge strong {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
+  color: var(--upt-primary);
   margin-bottom: 0.5rem;
 }
 
 .credential-badge span {
   display: block;
-  font-size: 0.85rem;
-  opacity: 0.9;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 /* ============================================
@@ -1060,6 +1222,23 @@ body {
     padding: 0 1rem;
   }
 
+  .accreditation-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .accreditation-title {
+    font-size: 1.8rem;
+  }
+
+  .accreditation-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .icacit-logo {
+    width: 100px;
+  }
+
   .nav-main {
     position: absolute;
     top: 100%;
@@ -1202,6 +1381,27 @@ body {
 
   .brand-name {
     font-size: 1rem;
+  }
+
+  .accreditation-hero {
+    padding: 3rem 1rem;
+  }
+
+  .accreditation-title {
+    font-size: 1.5rem;
+  }
+
+  .accreditation-desc {
+    font-size: 0.9rem;
+  }
+
+  .badge-item {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .icacit-logo {
+    width: 80px;
   }
 
   .hero {
