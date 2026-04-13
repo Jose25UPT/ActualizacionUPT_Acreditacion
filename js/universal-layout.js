@@ -16,7 +16,7 @@
     var root = getBaseToRoot();
 
     return '' +
-      '<nav class="layout-navbar layout-navbar-epis fixed top-0 w-full z-50 backdrop-blur-md border-b border-outline-variant/20">' +
+      '<nav class="layout-navbar layout-navbar-epis sticky top-0 w-full z-50 backdrop-blur-md border-b border-outline-variant/20">' +
       '  <div class="flex justify-between items-center px-6 md:px-10 py-5 md:py-6 max-w-screen-2xl mx-auto">' +
       '    <div class="flex items-center gap-3">' +
       '      <img src="' + root + 'img/logoepis.png" alt="Logo EPIS" class="h-11 md:h-12 w-auto object-contain drop-shadow-sm" />' +
