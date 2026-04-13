@@ -24,8 +24,8 @@
         Aquí se presenta la malla curricular vigente y la anterior para consulta del programa, con sus ciclos, créditos y prerrequisitos.
       </p>
       <div class="hero-links">
-        <a href="./plan-2020-i.html">Plan 2020-I</a>
-        <a href="./plan-2016-i.html">Plan 2016-I</a>
+        <a href="#plan-2020" data-plan-tab="2020">Plan 2020-I</a>
+        <a href="#plan-2016" data-plan-tab="2016">Plan 2016-I</a>
         <a href="./malla-curricular.html">Ver malla curricular</a>
       </div>
     </div>
@@ -50,8 +50,8 @@
     </div>
 
     <div class="tabs">
-      <a class="tab-link" href="./plan-2020-i.html">Plan 2020-I</a>
-      <a class="tab-link" href="./plan-2016-i.html">Plan 2016-I</a>
+      <a class="tab-link" href="#plan-2020" data-plan-tab="2020">Plan 2020-I</a>
+      <a class="tab-link" href="#plan-2016" data-plan-tab="2016">Plan 2016-I</a>
       <a class="tab-link" href="./malla-curricular.html">Malla Curricular</a>
       <a class="tab-link" href="./mision-vision.html">Misión y Visión</a>
       <a class="tab-link" href="./comites-programa.html">Comités</a>
@@ -59,7 +59,43 @@
     </div>
   </section>
 
-  <section id="plan-2020" class="panel reveal">
+  <section id="plan-preview" class="panel plan-preview-panel">
+    <div class="section-head plan-preview-head">
+      <div>
+        <p class="eyebrow">Listado de planes</p>
+        <h2>Selecciona una versión</h2>
+      </div>
+      <p>
+        Los dos planes están visibles aquí mismo. Al seleccionar uno, queda resaltado y el contenido inferior se ordena respecto a esa versión.
+      </p>
+    </div>
+
+    <div class="plan-preview-shell">
+      <div class="plan-preview-stage is-active" data-plan-preview="2020" data-plan-card="2020">
+        <div class="preview-badge">Vista previa 2020-I</div>
+        <h3>Plan de Estudios 2020-I</h3>
+        <p>La versión vigente concentra 211 créditos obligatorios, 9 electivos y el esquema de prácticas e extracurriculares preparado para egresar con 225 créditos.</p>
+        <div class="preview-metrics">
+          <div><strong>225</strong><span>créditos totales</span></div>
+          <div><strong>10</strong><span>ciclos académicos</span></div>
+          <div><strong>44</strong><span>créditos electivos</span></div>
+        </div>
+      </div>
+
+      <div class="plan-preview-stage" data-plan-preview="2016" data-plan-card="2016">
+        <div class="preview-badge">Vista previa 2016-I</div>
+        <h3>Plan de Estudios 2016-I</h3>
+        <p>La versión anterior mantiene la progresión por ciclos, con formación base, programación, software, redes y la ruta de proyectos académicos.</p>
+        <div class="preview-metrics">
+          <div><strong>225</strong><span>créditos totales</span></div>
+          <div><strong>10</strong><span>ciclos académicos</span></div>
+          <div><strong>36</strong><span>créditos electivos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan-2020" class="panel plan-section is-active-plan" data-plan-section="2020">
     <h3>Plan de Estudios 2020-I</h3>
     <p>Plan organizado por ciclos, con 211 créditos obligatorios, 9 electivos, 2 actividades extracurriculares y 3 prácticas preprofesionales para un total de 225 créditos.</p>
 
@@ -102,7 +138,7 @@
     </div>
   </section>
 
-  <section id="plan-2016" class="panel reveal">
+  <section id="plan-2016" class="panel plan-section" data-plan-section="2016" hidden>
     <h3>Plan de Estudios 2016-I</h3>
     <p>Versión anterior del plan, organizada por ciclos académicos con un enfoque progresivo en formación básica, programación, infraestructura, software y proyectos.</p>
 
@@ -156,3 +192,192 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Plan 2016-I | Systems Engineering</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="../js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../css/universal-layout.css"/>
+  <link rel="stylesheet" href="../css/plan-de-estudios.css"/>
+</head>
+<body id="top" data-banner="acreditacion" class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<div id="app-navbar"></div>
+
+<main class="pt-0">
+  <section class="hero hero-banner">
+    <div class="hero-copy">
+      <p class="eyebrow">Acreditación / Plan 2016-I</p>
+      <h1>Plan de Estudios 2016-I</h1>
+      <p class="lead">
+        Versión curricular anterior con formación básica, programación, infraestructura, software y proyectos.
+      </p>
+      <div class="hero-links">
+        <a href="./plan-de-estudios.html#plan-2016">Ver en plan general</a>
+        <a href="./plan-2020-i.html">Ir al plan 2020-I</a>
+        <a href="./malla-curricular.html">Ver malla curricular</a>
+      </div>
+    </div>
+
+    <aside class="hero-aside" aria-hidden="true">
+      <div class="hero-aside-number">2016</div>
+      <p>
+        Estructura curricular previa para revisar su secuencia académica, prerrequisitos y distribución total de créditos.
+      </p>
+    </aside>
+  </section>
+
+  <section class="panel">
+    <h3>Plan de Estudios 2016-I</h3>
+    <p>Versión anterior del plan, organizada por ciclos académicos con un enfoque progresivo en formación básica, programación, infraestructura, software y proyectos.</p>
+
+    <div class="cycle-title">I CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>ING-101</td><td>MATEMATICA I</td><td>6</td><td>5</td><td>Ninguno</td></tr><tr><td>ING-102</td><td>MATEMATICA BASICA I</td><td>6</td><td>5</td><td>Ninguno</td></tr><tr><td>ING-103</td><td>DISEÑO EN INGENIERIA</td><td>6</td><td>4</td><td>Ninguno</td></tr><tr><td>ING-104</td><td>COMUNICACIÓN ORAL Y ESCRITA</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>ING-105</td><td>METODOLOGIA DEL TRABAJO UNIVERSITARIO</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-171</td><td>INTRODUCCION A LA INGENIERIA DE SISTEMAS</td><td>2</td><td>2</td><td>Ninguno</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>28</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">II CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>ING-201</td><td>MATEMATICA II</td><td>6</td><td>5</td><td>ING-101</td></tr><tr><td>ING-202</td><td>FISICA I</td><td>6</td><td>5</td><td>Min 14 Créditos</td></tr><tr><td>ING-203</td><td>TECNICAS DE PROGRAMACIÓN</td><td>6</td><td>4</td><td>Ninguno</td></tr><tr><td>ING-204</td><td>ECONOMIA I</td><td>3</td><td>2</td><td>Min 12 Créditos</td></tr><tr><td>ING-205</td><td>ESTADISTICA I</td><td>4</td><td>3</td><td>Min 12 Créditos</td></tr><tr><td>ING-206</td><td>QUIMICA I</td><td>5</td><td>4</td><td>Ninguno</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>30</strong></td><td><strong>23</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">III CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-371</td><td>MATEMATICA DISCRETA</td><td>6</td><td>4</td><td>ING-201</td></tr><tr><td>SI-372</td><td>SISTEMAS ELECTRONICOS DIGITALES</td><td>6</td><td>4</td><td>ING-202</td></tr><tr><td>SI-373</td><td>ALGORITMOS Y ESTRUCTURA DE DATOS</td><td>6</td><td>4</td><td>ING-203</td></tr><tr><td>SI-374</td><td>DISEÑO Y MODELAMIENTO VIRTUAL</td><td>4</td><td>3</td><td>ING-103</td></tr><tr><td>SI-375</td><td>MODELO DE PROCESOS DE NEGOCIOS</td><td>6</td><td>4</td><td>Min 36 Créditos</td></tr><tr><td>SI-376</td><td>SISTEMAS DE INFORMACION</td><td>4</td><td>3</td><td>Min 36 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>32</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">IV CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-471</td><td>INTRODUCCION AL DESARROLLO WEB</td><td>4</td><td>3</td><td>Min 60 Créditos</td></tr><tr><td>SI-472</td><td>ARQUITECTURA DEL COMPUTADOR</td><td>6</td><td>4</td><td>SI-372</td></tr><tr><td>SI-473</td><td>PROGRAMACION I</td><td>6</td><td>4</td><td>SI-373</td></tr><tr><td>SI-474</td><td>INGENIERIA ECONOMICA Y FINANCIERA</td><td>4</td><td>3</td><td>SI-371</td></tr><tr><td>SI-475</td><td>INGENIERIA DE REQUERIMIENTOS</td><td>6</td><td>4</td><td>SI-375</td></tr><tr><td>SI-476</td><td>PROGRAMACION ORIENTADA A OBJETOS</td><td>6</td><td>4</td><td>Min 60 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>32</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">V CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-571</td><td>DISEÑO DE BASE DE DATOS</td><td>6</td><td>4</td><td>SI-475</td></tr><tr><td>SI-572</td><td>SISTEMAS OPERATIVOS I</td><td>6</td><td>4</td><td>SI-472</td></tr><tr><td>SI-573</td><td>PROGRAMACION II</td><td>6</td><td>4</td><td>SI-473</td></tr><tr><td>SI-574</td><td>INVESTIGACION DE OPERACIONES</td><td>4</td><td>3</td><td>SI-474</td></tr><tr><td>SI-575</td><td>DISEÑO Y ARQUITECTURA DE SOFTWARE</td><td>6</td><td>4</td><td>SI-475</td></tr><tr><td>SI-576</td><td>INTERACCION Y DISEÑO DE INTERFACES</td><td>4</td><td>3</td><td>Min 80 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>32</strong></td><td><strong>22</strong></td><td></td></tr></table></div>
+
+    <div class="cycle-title">VI CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-671</td><td>BASE DE DATOS I</td><td>6</td><td>4</td><td>SI-571</td></tr><tr><td>SI-672</td><td>SISTEMAS OPERATIVOS II</td><td>6</td><td>4</td><td>SI-572</td></tr><tr><td>SI-673</td><td>PROGRAMACION III</td><td>6</td><td>4</td><td>SI-573</td></tr><tr><td>SI-674</td><td>DESARROLLO DE APLICACIONES WEB I</td><td>6</td><td>4</td><td>SI-571</td></tr><tr><td>SI-675</td><td>INGENIERIA DE SOFTWARE</td><td>4</td><td>3</td><td>SI-575</td></tr><tr><td>SI-676</td><td>ETICA PROFESIONAL</td><td>3</td><td>3</td><td>Min 100 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>31</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">VII CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-771</td><td>BASE DE DATOS II</td><td>6</td><td>4</td><td>SI-671</td></tr><tr><td>SI-772</td><td>REDES Y COMUNICACIONES DE DATOS I</td><td>4</td><td>3</td><td>SI-672</td></tr><tr><td>SI-773</td><td>SOLUCIONES MOVILES I</td><td>6</td><td>4</td><td>SI-673</td></tr><tr><td>SI-774</td><td>GESTION DE PROYECTOS DE TI</td><td>6</td><td>4</td><td>SI-675</td></tr><tr><td>SI-775</td><td>CALIDAD Y PRUEBAS DE SOFTWARE</td><td>6</td><td>4</td><td>Min 120 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>28</strong></td><td><strong>19</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">VIII CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-871</td><td>INTELIGENCIA DE NEGOCIOS</td><td>6</td><td>4</td><td>SI-771</td></tr><tr><td>SI-872</td><td>REDES Y COMUNICACIONES DE DATOS II</td><td>6</td><td>4</td><td>SI-772</td></tr><tr><td>SI-873</td><td>INGLES TECNICO</td><td>6</td><td>4</td><td>(*)</td></tr><tr><td>SI-874</td><td>DESARROLLO DE APLICACIONES WEB II</td><td>6</td><td>4</td><td>SI-674</td></tr><tr><td>SI-875</td><td>SEGURIDAD INFORMATICA</td><td>5</td><td>4</td><td>Min 140 Créditos</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>29</strong></td><td><strong>20</strong></td><td></td></tr></table></div>
+
+    <div class="cycle-title">IX CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-971</td><td>AUDITORIA DE SISTEMAS</td><td>4</td><td>3</td><td>SI-875</td></tr><tr><td>SI-972</td><td>REDES Y COMUNICACIONES DE DATOS III</td><td>6</td><td>4</td><td>SI-872</td></tr><tr><td>SI-973</td><td>METODOLOGÍA DE LA INVESTIGACIÓN APLICADA</td><td>4</td><td>3</td><td>SI-873</td></tr><tr><td>SI-974</td><td>CONSTRUCCION DE SOFTWARE I</td><td>6</td><td>4</td><td>SI-774</td></tr><tr><td>SI-975</td><td>PLANEAMIENTO ESTRATEGICO DE TI</td><td>5</td><td>4</td><td>Min 160 Créditos</td></tr><tr><td>SI-976</td><td>GESTION DE LA CONFIGURACION Y ADMINISTRACION DE SOFTWARE</td><td>4</td><td>3</td><td>SI-775</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>29</strong></td><td><strong>21</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">X CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-071</td><td>TALLER DE LIDERAZGO Y EMPRENDIMIENTO</td><td>4</td><td>3</td><td>Min 180 Cred</td></tr><tr><td>SI-072</td><td>TALLER DE REDES Y COMUNICACIÓN DE DATOS</td><td>6</td><td>4</td><td>SI-972</td></tr><tr><td>SI-073</td><td>PROYECTO DE TESIS</td><td>6</td><td>4</td><td>SI-973</td></tr><tr><td>SI-074</td><td>CONSTRUCCION DE SOFTWARE II</td><td>6</td><td>4</td><td>SI-974</td></tr><tr><td>SI-075</td><td>GERENCIA DE TI</td><td>4</td><td>3</td><td>SI-975</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>26</strong></td><td><strong>18</strong></td><td></td></tr></table></div>
+
+    <div class="cycle-title">ELECTIVOS</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>Horas</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-776</td><td>MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE</td><td>4</td><td>3</td><td>Min 120 Créditos</td></tr><tr><td>SI-777</td><td>CONTABILIDAD GENERAL</td><td>4</td><td>3</td><td>Min 120 Créditos</td></tr><tr><td>SI-778</td><td>PATRONES DE SOFTWARE</td><td>4</td><td>3</td><td>SI-575</td></tr><tr><td>SI-876</td><td>DERECHO INFORMATICO</td><td>4</td><td>3</td><td>Min 140 Créditos</td></tr><tr><td>SI-877</td><td>DISEÑO Y CREACION DE VIDEOJUEGOS</td><td>4</td><td>3</td><td>SI-673</td></tr><tr><td>SI-977</td><td>NEGOCIOS Y MARKETING POR INTERNET</td><td>4</td><td>3</td><td>Min 160 Créditos</td></tr><tr><td>SI-978</td><td>TOPICOS DE BASE DE DATOS AVANZADOS</td><td>4</td><td>3</td><td>SI-871</td></tr><tr><td>SI-076</td><td>SISTEMAS DE INFORMACION DE BANCA Y FINANZAS</td><td>4</td><td>3</td><td>Min 180 Créditos</td></tr><tr><td>SI-077</td><td>SOLUCIONES MOVILES II</td><td>4</td><td>3</td><td>SI-773</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>36</strong></td><td><strong>27</strong></td><td></td></tr></tbody></table></div>
+
+    <p>Electivos: total 36 créditos y 27 horas.</p>
+
+    <div class="summary-grid">
+      <div class="summary-card"><strong>RESUMEN</strong><span>211 créditos obligatorios</span></div>
+      <div class="summary-card"><strong>RESUMEN</strong><span>9 créditos electivos</span></div>
+      <div class="summary-card"><strong>RESUMEN</strong><span>3 créditos prácticas preprofesionales</span></div>
+      <div class="summary-card"><strong>RESUMEN</strong><span>2 créditos extracurriculares</span></div>
+      <div class="summary-card"><strong>TOTAL</strong><span>225 créditos para egresar</span></div>
+    </div>
+
+    <p>(*) Mínimo 155 créditos para prácticas preprofesionales.</p>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+
+<script src="../js/universal-layout.js"></script>
+<script src="../js/plan-de-estudios.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Plan 2020-I | Systems Engineering</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="../js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../css/universal-layout.css"/>
+  <link rel="stylesheet" href="../css/plan-de-estudios.css"/>
+</head>
+<body id="top" data-banner="acreditacion" class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<div id="app-navbar"></div>
+
+<main class="pt-0">
+  <section class="hero hero-banner">
+    <div class="hero-copy">
+      <p class="eyebrow">Acreditación / Plan 2020-I</p>
+      <h1>Plan de Estudios 2020-I</h1>
+      <p class="lead">
+        Estructura curricular vigente con 211 créditos obligatorios, 9 electivos, 2 actividades extracurriculares y 3 prácticas preprofesionales.
+      </p>
+      <div class="hero-links">
+        <a href="./plan-de-estudios.html#plan-2020">Ver en plan general</a>
+        <a href="./plan-2016-i.html">Ir al plan 2016-I</a>
+        <a href="./malla-curricular.html">Ver malla curricular</a>
+      </div>
+    </div>
+
+    <aside class="hero-aside" aria-hidden="true">
+      <div class="hero-aside-number">2020</div>
+      <p>
+        Versión curricular vigente para la revisión académica y la consulta de sus ciclos, prerrequisitos y resumen de créditos.
+      </p>
+    </aside>
+  </section>
+
+  <section class="panel">
+    <h3>Plan de Estudios 2020-I</h3>
+    <p>Plan organizado por ciclos, con 211 créditos obligatorios, 9 electivos, 2 actividades extracurriculares y 3 prácticas preprofesionales para un total de 225 créditos.</p>
+
+    <div class="cycle-title">I CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>EG-181</td><td>COMUNICACIÓN I</td><td>5</td><td>4</td><td>Ninguno</td></tr><tr><td>EG-182</td><td>MATEMATICA BASICA</td><td>6</td><td>4</td><td>Ninguno</td></tr><tr><td>EG-183</td><td>ESTRATEGIAS PARA EL APRENDIZAJE AUTONOMO</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>EG-184</td><td>DESARROLLO PERSONAL Y LIDERAZGO</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>EG-185</td><td>DESARROLLO DE COMPETENCIAS DIGITALES</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>INE-186</td><td>MATEMATICA I</td><td>6</td><td>5</td><td>Ninguno</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>27</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">II CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>EG-281</td><td>COMUNICACIÓN II</td><td>4</td><td>3</td><td>EG-181</td></tr><tr><td>EG-282</td><td>TERRITORIO PERUANO, DEFENSA Y SEGURIDAD NACIONAL</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>EG-283</td><td>FILOSOFIA</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>INE-284</td><td>TECNICAS DE PROGRAMACION</td><td>6</td><td>4</td><td>Ninguno</td></tr><tr><td>INE-285</td><td>FISICA I</td><td>5</td><td>4</td><td>Ninguno</td></tr><tr><td>INE-286</td><td>MATEMATICA II</td><td>6</td><td>5</td><td>INE-186</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>27</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">III CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>INE-381</td><td>ECONOMIA</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>EG-382</td><td>ETICA</td><td>3</td><td>3</td><td>EG-283</td></tr><tr><td>INE-383</td><td>ESTADISTICA Y PROBABILIDADES</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-384</td><td>ESTRUCTURA DE DATOS</td><td>6</td><td>4</td><td>INE-284</td></tr><tr><td>SI-385</td><td>SISTEMAS DE INFORMACION</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-386</td><td>MATEMATICA DISCRETA</td><td>6</td><td>4</td><td>INE-286</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>26</strong></td><td><strong>20</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">IV CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-481</td><td>MODELAMIENTO DE PROCESOS</td><td>6</td><td>4</td><td>SI-385</td></tr><tr><td>SI-482</td><td>INGENIERIA ECONOMICA Y FINANCIERA</td><td>4</td><td>3</td><td>INE-381</td></tr><tr><td>SI-483</td><td>INTERACCION Y DISEÑO DE INTERFACES</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>INE-484</td><td>DISEÑO EN INGENIERIA</td><td>6</td><td>4</td><td>Ninguno</td></tr><tr><td>SI-485</td><td>SISTEMAS ELECTRONICOS DIGITALES</td><td>6</td><td>4</td><td>SI-386</td></tr><tr><td>SI-486</td><td>PROGRAMACION I</td><td>6</td><td>4</td><td>SI-384</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>32</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">V CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-581</td><td>ARQUITECTURA DE COMPUTADORAS</td><td>6</td><td>4</td><td>SI-485</td></tr><tr><td>SI-582</td><td>DISEÑO DE BASE DE DATOS</td><td>6</td><td>4</td><td>SI-481</td></tr><tr><td>SI-583</td><td>DISEÑO Y MODELAMIENTO VIRTUAL</td><td>4</td><td>3</td><td>INE-484</td></tr><tr><td>SI-584</td><td>INGENIERIA DE REQUERIMIENTOS</td><td>6</td><td>4</td><td>SI-481</td></tr><tr><td>SI-585</td><td>INGENIERIA DE SOFTWARE</td><td>4</td><td>3</td><td>SI-483</td></tr><tr><td>SI-586</td><td>PROGRAMACION II</td><td>6</td><td>4</td><td>SI-486</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>32</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">VI CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>EG-681</td><td>ECOLOGIA Y DESARROLLO SOSTENIBLE</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-682</td><td>SISTEMAS OPERATIVOS I</td><td>6</td><td>4</td><td>SI-581</td></tr><tr><td>SI-683</td><td>BASE DE DATOS I</td><td>6</td><td>4</td><td>SI-582</td></tr><tr><td>SI-684</td><td>INVESTIGACION DE OPERACIONES</td><td>4</td><td>3</td><td>SI-585</td></tr><tr><td>SI-685</td><td>DISEÑO Y ARQUITECTURA DE SOFTWARE</td><td>6</td><td>4</td><td>SI-584</td></tr><tr><td>SI-686</td><td>PROGRAMACION III</td><td>6</td><td>4</td><td>SI-586</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>31</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">VII CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>EG-781</td><td>PROBLEMAS Y DESAFIOS DEL PERU EN UN MUNDO GLOBAL</td><td>3</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-782</td><td>SISTEMAS OPERATIVOS II</td><td>6</td><td>4</td><td>SI-682</td></tr><tr><td>SI-783</td><td>BASE DE DATOS II</td><td>6</td><td>4</td><td>SI-683</td></tr><tr><td>SI-784</td><td>CALIDAD Y PRUEBAS DE SOFTWARE</td><td>4</td><td>3</td><td>SI-685</td></tr><tr><td>SI-785</td><td>GESTION DE PROYECTOS DE TI</td><td>6</td><td>4</td><td>SI-684</td></tr><tr><td>SI-786</td><td>PROGRAMACION WEB I</td><td>6</td><td>4</td><td>SI-683</td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>31</strong></td><td><strong>22</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">VIII CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-881</td><td>INTELIGENCIA ARTIFICIAL</td><td>4</td><td>3</td><td>SI-783</td></tr><tr><td>SI-882</td><td>REDES Y COMUNICACIÓN DE DATOS I</td><td>4</td><td>3</td><td>SI-782</td></tr><tr><td>SI-883</td><td>SOLUCIONES MOVILES I</td><td>6</td><td>4</td><td>SI-786</td></tr><tr><td>SI-884</td><td>ESTADISTICA INFERENCIAL Y ANALISIS DE DATOS</td><td>4</td><td>3</td><td>SI-783</td></tr><tr><td>SI-885</td><td>INTELIGENCIA DE NEGOCIOS</td><td>6</td><td>4</td><td>SI-783</td></tr><tr><td>SI-886</td><td>PLANEAMIENTO ESTRATEGICO DE TI</td><td>4</td><td>3</td><td>SI-785</td></tr><tr><td>ELECTIVO 1</td><td></td><td></td><td></td><td></td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>28</strong></td><td><strong>20</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">IX CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-981</td><td>TALLER DE TESIS I</td><td>3</td><td>3</td><td>SI-884</td></tr><tr><td>SI-982</td><td>PROGRAMACION WEB II</td><td>6</td><td>4</td><td>SI-883</td></tr><tr><td>SI-983</td><td>CONSTRUCCION DE SOFTWARE I</td><td>6</td><td>4</td><td>SI-883</td></tr><tr><td>SI-984</td><td>REDES Y COMUNICACIÓN DE DATOS II</td><td>4</td><td>3</td><td>SI-882</td></tr><tr><td>SI-985</td><td>GESTION DE LA CONFIGURACION DE SOFTWARE</td><td>4</td><td>3</td><td>SI-885</td></tr><tr><td>SI-986</td><td>INGLES TÉCNICO</td><td>4</td><td>3</td><td>(* )</td></tr><tr><td>ELECTIVO 2</td><td></td><td></td><td></td><td></td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>27</strong></td><td><strong>20</strong></td><td></td></tr></tbody></table></div>
+
+    <div class="cycle-title">X CICLO</div>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Asignatura</th><th>TH</th><th>Créditos</th><th>Pre requisito</th></tr></thead><tbody><tr><td>SI-080</td><td>TALLER DE TESIS II / TRABAJO DE INVESTIGACION</td><td>3</td><td>3</td><td>SI-981</td></tr><tr><td>SI-082</td><td>SEGURIDAD DE TECNOLOGIA DE INFORMACION</td><td>4</td><td>3</td><td>SI-985</td></tr><tr><td>SI-083</td><td>CONSTRUCCION DE SOFTWARE II</td><td>6</td><td>4</td><td>SI-983</td></tr><tr><td>SI-084</td><td>AUDITORIA DE SISTEMAS</td><td>4</td><td>3</td><td>SI-985</td></tr><tr><td>SI-085</td><td>TALLER DE EMPRENDIMIENTO Y LIDERAZGO</td><td>4</td><td>3</td><td>Ninguno</td></tr><tr><td>SI-086</td><td>GERENCIA DE TECNOLOGIAS DE INFORMACION</td><td>4</td><td>3</td><td>SI-983</td></tr><tr><td>ELECTIVO 3</td><td></td><td></td><td></td><td></td></tr><tr><td><strong>TOTAL</strong></td><td></td><td><strong>25</strong></td><td><strong>19</strong></td><td></td></tr></table></div>
+
+    <p>Electivos: total 44 créditos y 33 horas.</p>
+
+    <div class="summary-grid">
+      <div class="summary-card"><strong>OBLIGATORIOS</strong><span>211 créditos</span></div>
+      <div class="summary-card"><strong>ELECTIVOS</strong><span>9 créditos</span></div>
+      <div class="summary-card"><strong>ACTIVIDADES EXTRACURRICULARES</strong><span>2 créditos</span></div>
+      <div class="summary-card"><strong>PRÁCTICAS PRE-PROFESIONALES</strong><span>3 créditos</span></div>
+      <div class="summary-card"><strong>TOTAL</strong><span>225 créditos</span></div>
+    </div>
+
+    <p>(*) Inglés intermedio: este es el 2020-I.</p>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+
+<script src="../js/universal-layout.js"></script>
+<script src="../js/plan-de-estudios.js"></script>
+</body>
+</html>

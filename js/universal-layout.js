@@ -177,8 +177,6 @@
       { title: 'Objetivos Educacionales', description: 'Resultados OE del programa', href: pages + 'objetivos-educacionales.html' },
       { title: 'Atributos del Graduado', description: 'Atributos AT del programa', href: pages + 'atributos-del-graduado.html' },
       { title: 'Plan de Estudios', description: 'Cursos, ciclos y creditos', href: pages + 'plan-de-estudios.html' },
-      { title: 'Plan 2020-I', description: 'Estructura curricular vigente', href: pages + 'plan-2020-i.html' },
-      { title: 'Plan 2016-I', description: 'Version curricular anterior', href: pages + 'plan-2016-i.html' },
       { title: 'Malla Curricular', description: 'Vista de malla y estructura', href: pages + 'malla-curricular.html' },
       { title: 'Concurso de Proyectos', description: 'Ediciones y bases', href: pages + 'concurso-proyectos.html' },
       { title: 'Documentos Estudiantes', description: 'Guias y formatos academicos', href: pages + 'documentos-estudiantes.html' },
