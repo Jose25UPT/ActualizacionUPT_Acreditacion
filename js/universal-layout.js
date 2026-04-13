@@ -20,7 +20,7 @@
       '  <div class="flex justify-between items-center px-6 md:px-10 py-5 md:py-6 max-w-screen-2xl mx-auto">' +
       '    <div class="flex items-center gap-3">' +
       '      <img src="' + root + 'img/logoepis.png" alt="Logo EPIS" class="h-11 md:h-12 w-auto object-contain drop-shadow-sm" />' +
-      '      <span class="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-headline">Systems Engineering</span>' +
+      '      <span class="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-headline">Escuela Profesional de Ingenieria de Sistemas</span>' +
       '      <span class="hidden md:inline text-sm text-primary font-label uppercase tracking-wider">EPIS-UPT</span>' +
       '    </div>' +
       '    <div class="hidden md:flex items-center gap-3 desktop-menu">' +
@@ -53,8 +53,8 @@
       '      <a class="text-neutral-700 dark:text-neutral-300 hover:text-primary transition-colors py-3 px-2 font-semibold text-base lg:text-lg rounded-md" href="' + pages + 'concurso-proyectos.html">Concurso</a>' +
       '    </div>' +
       '    <div class="flex items-center gap-3 md:gap-6">' +
-      '      <button id="global-search-btn" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors p-2" aria-label="Buscar en el sitio">search</button>' +
-      '      <button id="mobile-menu-btn" class="md:hidden material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors p-2">menu</button>' +
+      '      <button id="global-search-btn" class="material-symbols-outlined text-neutral-900 hover:text-primary transition-colors p-2" aria-label="Buscar en el sitio">search</button>' +
+      '      <button id="mobile-menu-btn" class="md:hidden material-symbols-outlined text-neutral-900 hover:text-primary transition-colors p-2">menu</button>' +
       '    </div>' +
       '  </div>' +
       '  <div id="mobile-menu" class="mobile-menu md:hidden">' +
