@@ -20,7 +20,7 @@
       '  <div class="flex justify-between items-center px-6 md:px-10 py-5 md:py-6 max-w-screen-2xl mx-auto">' +
       '    <div class="flex items-center gap-3">' +
       '      <img src="' + root + 'img/logoepis.png" alt="Logo EPIS" class="h-11 md:h-12 w-auto object-contain drop-shadow-sm" />' +
-      '      <span class="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-headline">Escuela Profesional de Ingenieria de Sistemas</span>' +
+      '      <a class="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-headline hover:text-primary transition-colors" href="' + root + 'index.html#presentacion">Escuela Profesional de Ingenieria de Sistemas</a>' +
       '      <span class="hidden md:inline text-sm text-primary font-label uppercase tracking-wider">EPIS-UPT</span>' +
       '    </div>' +
       '    <div class="hidden md:flex items-center gap-3 desktop-menu">' +
@@ -177,6 +177,8 @@
       { title: 'Objetivos Educacionales', description: 'Resultados OE del programa', href: pages + 'objetivos-educacionales.html' },
       { title: 'Atributos del Graduado', description: 'Atributos AT del programa', href: pages + 'atributos-del-graduado.html' },
       { title: 'Plan de Estudios', description: 'Cursos, ciclos y creditos', href: pages + 'plan-de-estudios.html' },
+      { title: 'Plan 2020-I', description: 'Estructura curricular vigente', href: pages + 'plan-2020-i.html' },
+      { title: 'Plan 2016-I', description: 'Version curricular anterior', href: pages + 'plan-2016-i.html' },
       { title: 'Malla Curricular', description: 'Vista de malla y estructura', href: pages + 'malla-curricular.html' },
       { title: 'Concurso de Proyectos', description: 'Ediciones y bases', href: pages + 'concurso-proyectos.html' },
       { title: 'Documentos Estudiantes', description: 'Guias y formatos academicos', href: pages + 'documentos-estudiantes.html' },
