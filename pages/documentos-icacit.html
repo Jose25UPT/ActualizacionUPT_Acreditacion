@@ -16,85 +16,144 @@
 <div id="app-navbar"></div>
 
 <main class="pt-0">
-  <section class="hero reveal hero-banner">
-    <div class="hero-copy">
-      <p class="eyebrow">Recursos / ICACIT</p>
-      <h1>Documentos de ICACIT</h1>
-      <p class="lead">
-        Repositorio de documentos de acreditacion ICACIT para seguimiento de criterios, cuestionarios y gestion del proceso de evaluacion.
-      </p>
-      <div class="hero-links">
-        <a href="#digitales">Documentos digitales</a>
-        <a href="#generales">Documentos generales</a>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32 reveal">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+      <div class="max-w-4xl">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Calidad Académica
+          <span class="w-8 h-[2px] bg-primary"></span>
+        </p>
+        <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+          Acreditación <span class="text-primary">ICACIT</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+          Documentación oficial y evidencias del proceso de acreditación internacional que garantiza la mejora continua de nuestro programa.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#documentos" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-2">
+            Ver Evidencias <span class="material-symbols-outlined">verified</span>
+          </a>
+          <a href="./documentos-docentes.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-variant transition-all flex items-center gap-2">
+            Documentos Docentes <span class="material-symbols-outlined">badge</span>
+          </a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <aside class="hero-aside" aria-hidden="true">
-      <div class="hero-aside-number">5</div>
-      <p>
-        Dos grupos de archivos ICACIT: documentos digitales y documentos generales para la etapa 2014-2015.
+  <!-- Digital Documents Section -->
+  <section id="digitales" class="max-w-screen-2xl mx-auto px-6 md:px-10 py-20 reveal">
+    <div class="mb-16">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Acreditación</p>
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Documentos Digitales</h2>
+      <p class="text-on-surface-variant max-w-3xl text-lg leading-relaxed">
+        Recursos esenciales para el seguimiento de criterios y la elaboración de cuestionarios de auto-estudio.
       </p>
-    </aside>
-  </section>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Criterios -->
+      <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-red-600 text-3xl">picture_as_pdf</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">Normativa / PDF</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">ICACIT CTAI Criterios</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Criterios de acreditación para programas de computación, tecnología y arquitectura.</p>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+          Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+        </a>
+      </article>
 
-  <section id="digitales" class="reveal">
-    <div class="doc-section reveal">
-      <h3 class="doc-title">Documentos Digitales</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documentos</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 120px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2014_15_ICACIT_CTAI_Criterios</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">Descargar</a></td>
-          </tr>
-          <tr>
-            <td>2014_15_ICACIT_CTAI_self_study_questionnaire</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Questionnaire -->
+      <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-blue-600 text-3xl">quiz</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">Cuestionario / DOCX</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">Self-Study Questionnaire</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Cuestionario de auto-estudio para la evaluación interna y mejora continua del programa.</p>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+          Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+        </a>
+      </article>
     </div>
   </section>
 
-  <section id="generales" class="reveal">
-    <div class="doc-section reveal">
-      <h3 class="doc-title">Documentos Generales</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documentos</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 120px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2014_15_ICACIT_Costos_Evaluacion</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">Descargar</a></td>
-          </tr>
-          <tr>
-            <td>2014_15_ICACIT_MPPA_ESP</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Solicitud_de_Evaluacion_2014_2015</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- General Documents Section -->
+  <section id="generales" class="max-w-screen-2xl mx-auto px-6 md:px-10 py-20 bg-surface-container-low reveal">
+    <div class="mb-16">
+      <p class="text-tertiary font-bold uppercase tracking-widest text-sm mb-4">Gestión Administrativa</p>
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Documentos Generales</h2>
+      <p class="text-on-surface-variant max-w-3xl text-lg leading-relaxed">
+        Información sobre políticas, procedimientos y requisitos administrativos para el proceso de evaluación.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Costos -->
+      <article class="group bg-surface border border-outline-variant/10 rounded-[32px] p-8 hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-red-600 text-3xl">payments</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">Tasas / PDF</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors">Costos de Evaluación</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Detalle actualizado de costos y tasas administrativas para los procesos de ICACIT.</p>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 bg-surface-container-low text-tertiary border border-tertiary/20 hover:bg-tertiary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+          Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+        </a>
+      </article>
+
+      <!-- MPPA -->
+      <article class="group bg-surface border border-outline-variant/10 rounded-[32px] p-8 hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-red-600 text-3xl">rule</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">Manual / PDF</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors">ICACIT MPPA ESP</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Manual de políticas y procedimientos para la acreditación (Versión en Español).</p>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 bg-surface-container-low text-tertiary border border-tertiary/20 hover:bg-tertiary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+          Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+        </a>
+      </article>
+
+      <!-- Solicitud -->
+      <article class="group bg-surface border border-outline-variant/10 rounded-[32px] p-8 hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-blue-600 text-3xl">edit_note</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">Formato / DOCX</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors">Solicitud de Evaluación</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Formato oficial para solicitar formalmente el inicio del proceso de evaluación externa.</p>
+        </div>
+        <a href="#" class="flex items-center justify-center gap-2 bg-surface-container-low text-tertiary border border-tertiary/20 hover:bg-tertiary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+          Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+        </a>
+      </article>
     </div>
   </section>
+
 </main>
 
 <div id="app-footer"></div>

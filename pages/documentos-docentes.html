@@ -16,180 +16,275 @@
 <div id="app-navbar"></div>
 
 <main class="pt-0">
-  <section class="hero reveal hero-banner">
-    <div class="hero-copy">
-      <p class="eyebrow">Recursos / Docentes</p>
-      <h1>Documentos de Docentes</h1>
-      <p class="lead">
-        Acceso a formatos, guías y documentos necesarios para la gestión academic de docentes. Incluye portafolios, sílabus, currículum vitae y más.
-      </p>
-      <div class="hero-links">
-        <a href="#documentos">Ver documentos</a>
-        <a href="http://epis.upt.edu.pe/acreditacion/index.php/inicio/contactos">Consultar</a>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32 reveal">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+      <div class="max-w-4xl">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Recursos / Comunidad
+          <span class="w-8 h-[2px] bg-primary"></span>
+        </p>
+        <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+          Documentos para <span class="text-primary">Docentes</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+          Accede a los formatos oficiales, portafolio digital y recursos necesarios para la gestión académica y cumplimiento de estándares.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#documentos" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-2">
+            Ver Portafolio <span class="material-symbols-outlined">folder_shared</span>
+          </a>
+          <a href="./documentos-icacit.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-variant transition-all flex items-center gap-2">
+            Acreditación ICACIT <span class="material-symbols-outlined">verified_user</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="documentos" class="max-w-screen-2xl mx-auto px-6 md:px-10 py-20 reveal">
+    <!-- Documentos Digitales Portafolio -->
+    <div class="mb-20">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">inventory_2</span>
+        </div>
+        <h3 class="text-3xl md:text-4xl font-headline text-on-surface font-bold">Documentos Digitales Portafolio</h3>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Indicaciones -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-orange-600 text-3xl">slideshow</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">PPTX / Guía</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Indicaciones para el Portafolio</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Guía detallada sobre la estructura y requisitos obligatorios para la conformación del portafolio docente.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <!-- Orden -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">description</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Formato</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Orden del Contenido</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Esquema organizativo estandarizado para la presentación lógica de evidencias académicas.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <!-- Prueba Entrada -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">quiz</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Examen</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Prueba de Entrada</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Formato oficial para la evaluación diagnóstica inicial de los estudiantes al inicio del semestre.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <!-- Informe Prueba Entrada -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-green-600 text-3xl">table_chart</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">XLSX / Informe</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Informe de Prueba de Entrada</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Plantilla para el procesamiento estadístico y análisis de resultados de la evaluación inicial.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <!-- Examen Unidad -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">assignment</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Formato</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Examen de Unidad</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Estructura estándar para las evaluaciones parciales de curso siguiendo los lineamientos de la EPIS.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <!-- Informe Final -->
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">task</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Informe</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Informe Final del Curso</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Documento de cierre con el resumen de logros académicos y estadísticas finales del semestre.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
       </div>
     </div>
 
-    <aside class="hero-aside" aria-hidden="true">
-      <div class="hero-aside-number">4</div>
-      <p>
-        Categorías de documentos: Portafolios, Currículum Vitae, Sílabus y Trabajos Académicos, con todos los formatos necesarios.
-      </p>
-    </aside>
-  </section>
-
-  <section id="documentos" class="reveal">
-    <!-- Documentos Digitales Portafolio -->
-    <div class="doc-section reveal">
-      <h3 class="doc-title">📋 Documentos Digitales Portafolio</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documento</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 100px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Indicaciones para el Portafolio</td>
-            <td><span class="file-type">PPTX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Orden del contenido del Portafolio</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Documento de Prueba de Entrada</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato Informe de Prueba de Entrada</td>
-            <td><span class="file-type">XLSX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato de exámen de unidad</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato de portafolio de curso (Semestre 2018-I)</td>
-            <td><span class="file-type">XLSX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato Final de Desarrollo del Curso</td>
-            <td><span class="file-type">XLSX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Informe Final del Curso</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
     <!-- Documentos Curriculum Vitae -->
-    <div class="doc-section reveal">
-      <h3 class="doc-title">👤 Documentos Curriculum Vitae</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documento</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 100px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Formato Curriculum Vitae ICACIT</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="mb-20">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">badge</span>
+        </div>
+        <h3 class="text-3xl md:text-4xl font-headline text-on-surface font-bold">Documentos Curriculum Vitae</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">person_search</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / CV</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Formato CV ICACIT</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Plantilla oficial requerida para los procesos de acreditación internacional y evaluación docente.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+      </div>
     </div>
 
     <!-- Documentos Silabo -->
-    <div class="doc-section reveal">
-      <h3 class="doc-title">📖 Documentos Silabo</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documento</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 100px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Formato de Silabo ICACIT Resumen</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato de Silabo General EPIS</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="mb-20">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">auto_stories</span>
+        </div>
+        <h3 class="text-3xl md:text-4xl font-headline text-on-surface font-bold">Documentos Silabo</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">menu_book</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Silabo</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Silabo ICACIT (Resumen)</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Esquema resumido alineado estrictamente con los criterios de evaluación de ICACIT.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">article</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">DOCX / Silabo</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Silabo General EPIS</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Formato institucional estándar para el desarrollo de contenidos y plan de aprendizaje.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+      </div>
     </div>
 
-    <!-- Documentos Trabajos Académicos de Estudiantes -->
-    <div class="doc-section reveal">
-      <h3 class="doc-title">🎓 Documentos Trabajos Académicos de Estudiantes</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Documento</th>
-            <th style="width: 120px;">Formato</th>
-            <th style="width: 100px;">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Guía de Trabajos Académicos</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Modelo de Informe</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Modelo de Trabajo Académico</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Formato Acta de Reunión para Proyectos</td>
-            <td><span class="file-type">DOCX</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Reglamento de Grados y títulos</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Directiva de Práctricas Pre-Profesionales</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-          <tr>
-            <td>Manual de Investigación</td>
-            <td><span class="file-type">PDF</span></td>
-            <td><a href="#" class="doc-link">📥 Descargar</a></td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Documentos Académicos y Reglamentos -->
+    <div class="mb-20">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">school</span>
+        </div>
+        <h3 class="text-3xl md:text-4xl font-headline text-on-surface font-bold">Documentos Académicos y Reglamentos</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-red-600 text-3xl">menu_book</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">PDF / Guía</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Guía de Trabajos Académicos</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Manual sobre normas de estilo, citación y presentación de investigaciones académicas.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-red-600 text-3xl">gavel</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">PDF / Reglamento</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Reglamento de Grados y Títulos</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Normativa vigente para los procesos de egreso, sustentación y titulación profesional.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+
+        <article class="group bg-surface-container-low border border-outline-variant/10 rounded-[32px] p-8 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-6">
+              <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-red-600 text-3xl">work_history</span>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/50">PDF / Directiva</span>
+            </div>
+            <h4 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Prácticas Pre-Profesionales</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-8">Lineamientos y procedimientos para la validación de la experiencia laboral formativa.</p>
+          </div>
+          <a href="#" class="flex items-center justify-center gap-2 bg-surface text-primary border border-primary/20 hover:bg-primary hover:text-white py-4 rounded-2xl font-bold transition-all group/btn">
+            Descargar Archivo <span class="material-symbols-outlined group-hover/btn:translate-y-1 transition-transform">download</span>
+          </a>
+        </article>
+      </div>
     </div>
   </section>
 </main>

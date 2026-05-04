@@ -8,71 +8,149 @@ document.addEventListener("DOMContentLoaded", () => {
   const anios = ["2020", "2021", "2022", "2023", "2024", "2025"];
   const graduados = [10, 27, 29, 35, 30, 32];
 
-  Highcharts.chart("chart-matriculados", {
-    chart: { type: "line", backgroundColor: "transparent" },
-    title: { text: "Estudiantes matriculados por semestre academico" },
-    subtitle: { text: "Estudiantes de la EPIS-UPT" },
-    xAxis: { categories: semestres, title: { text: "Semestres" } },
-    yAxis: {
-      min: 225,
-      max: 350,
-      tickInterval: 25,
-      title: { text: "Cantidad" }
+  // Configuración global de Highcharts
+  Highcharts.setOptions({
+    lang: {
+      decimalPoint: '.',
+      thousandsSep: ','
     },
-    legend: { enabled: true },
-    credits: { enabled: true },
+    chart: {
+      style: {
+        fontFamily: '"Public Sans", system-ui, sans-serif'
+      }
+    }
+  });
+
+  Highcharts.chart("chart-matriculados", {
+    chart: { 
+      type: "areaspline", 
+      backgroundColor: "transparent",
+      marginTop: 30
+    },
+    title: { text: null },
+    credits: { enabled: false },
+    xAxis: { 
+      categories: semestres, 
+      lineColor: '#e0e0e0',
+      tickColor: '#e0e0e0',
+      labels: {
+        style: { color: '#666', fontSize: '11px' }
+      }
+    },
+    yAxis: {
+      min: 200,
+      max: 360,
+      gridLineColor: '#f0f0f0',
+      title: { text: "Nº Estudiantes", style: { color: '#999' } },
+      labels: {
+        style: { color: '#666' }
+      }
+    },
+    legend: { enabled: false },
+    plotOptions: {
+      areaspline: {
+        fillColor: {
+          linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+          stops: [
+            [0, 'rgba(22, 133, 243, 0.2)'],
+            [1, 'rgba(22, 133, 243, 0)']
+          ]
+        },
+        marker: {
+          radius: 4,
+          fillColor: '#FFFFFF',
+          lineWidth: 2,
+          lineColor: '#1685F3'
+        },
+        lineWidth: 3,
+        color: '#1685F3'
+      }
+    },
     series: [{
-      name: "Estudiantes matriculados",
-      data: matriculados,
-      color: "#1685F3",
-      lineWidth: 3,
-      marker: { radius: 4 }
+      name: "Matriculados",
+      data: matriculados
     }],
     tooltip: {
-      pointFormat: "<b>Estudiantes matriculados:</b> {point.y}"
-    },
-    responsive: {
-      rules: [{
-        condition: { maxWidth: 640 },
-        chartOptions: { xAxis: { labels: { rotation: -45 } } }
-      }]
+      backgroundColor: '#ffffff',
+      borderWidth: 1,
+      borderColor: '#e0e0e0',
+      shadow: true,
+      useHTML: true,
+      headerFormat: '<small style="color:#999;font-size:10px">{point.key}</small><br/>',
+      pointFormat: '<span style="color:#1685F3;font-weight:bold;font-size:14px">{point.y}</span> <span style="color:#666">estudiantes</span>'
     }
   });
 
   Highcharts.chart("chart-graduados", {
-    chart: { type: "column", backgroundColor: "transparent" },
-    title: { text: "Graduados por Ano" },
-    xAxis: { categories: anios, title: { text: "Ano" } },
+    chart: { 
+      type: "column", 
+      backgroundColor: "transparent",
+      marginTop: 30
+    },
+    title: { text: null },
+    credits: { enabled: false },
+    xAxis: { 
+      categories: anios,
+      lineColor: '#e0e0e0',
+      tickColor: '#e0e0e0',
+      labels: {
+        style: { color: '#666' }
+      }
+    },
     yAxis: {
       min: 0,
       max: 40,
-      tickInterval: 10,
-      title: { text: "Cantidad" }
-    },
-    legend: { enabled: true },
-    plotOptions: {
-      column: {
-        borderRadius: 4,
-        pointPadding: 0.1,
-        groupPadding: 0.12
+      gridLineColor: '#f0f0f0',
+      title: { text: "Nº Graduados", style: { color: '#999' } },
+      labels: {
+        style: { color: '#666' }
       }
     },
-    series: [{ name: "Graduados", data: graduados, color: "#2266AA" }],
-    tooltip: { pointFormat: "<b>Graduados:</b> {point.y}" },
-    credits: { enabled: true }
+    legend: { enabled: false },
+    plotOptions: {
+      column: {
+        borderRadius: 6,
+        borderWidth: 0,
+        color: '#2266AA',
+        pointWidth: 35,
+        dataLabels: {
+          enabled: true,
+          style: { fontWeight: 'bold', color: '#2266AA' }
+        }
+      }
+    },
+    series: [{ name: "Graduados", data: graduados }],
+    tooltip: {
+      backgroundColor: '#ffffff',
+      borderWidth: 1,
+      borderColor: '#e0e0e0',
+      shadow: true,
+      useHTML: true,
+      headerFormat: '<small style="color:#999;font-size:10px">Año {point.key}</small><br/>',
+      pointFormat: '<span style="color:#2266AA;font-weight:bold;font-size:14px">{point.y}</span> <span style="color:#666">graduados</span>'
+    }
   });
 
+  // Llenar tablas con estilos
   const tbodyMat = document.getElementById("tbody-matriculados");
   semestres.forEach((sem, i) => {
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${sem}</td><td>${matriculados[i]}</td>`;
+    tr.className = "hover:bg-primary/5 transition-colors";
+    tr.innerHTML = `
+      <td class="p-4 text-on-surface">${sem}</td>
+      <td class="p-4 font-bold text-primary">${matriculados[i]}</td>
+    `;
     tbodyMat.appendChild(tr);
   });
 
   const tbodyEgr = document.getElementById("tbody-graduados");
   anios.forEach((anio, i) => {
     const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${anio}</td><td>${graduados[i]}</td>`;
+    tr.className = "hover:bg-primary/5 transition-colors";
+    tr.innerHTML = `
+      <td class="p-4 text-on-surface">${anio}</td>
+      <td class="p-4 font-bold text-primary">${graduados[i]}</td>
+    `;
     tbodyEgr.appendChild(tr);
   });
 });

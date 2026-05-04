@@ -20,261 +20,291 @@
 <!-- Resto del contenido principal (sin cambios) -->
 <main class="pt-0">
   <!-- 1. Immersive Hero -->
-  <section class="relative min-h-[650px] flex items-center overflow-hidden bg-surface-container-low hero-banner hero-banner-home reveal">
-    <div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-7">
-        <span class="text-primary font-label text-sm font-semibold tracking-[0.2em] uppercase mb-6 block">Excelencia Evolucionada</span>
-        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-[1.1] mb-8 tracking-tight">
-          Architecting the <span class="italic text-primary-container">Next</span> Paradigm.
-        </h1>
-        <p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl leading-relaxed mb-12 font-light">
-          Merging computational precision with human-centric design to solve the world's most complex structural narratives.
+  <section class="relative min-h-[700px] flex items-center overflow-hidden bg-surface-container-low reveal">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -rotate-12 translate-x-1/2 translate-y-12 rounded-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-tertiary/5 rotate-12 -translate-x-1/2 -translate-y-12 rounded-[100px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-8 relative z-10 flex flex-col items-center text-center">
+      <div class="max-w-4xl">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-6 flex items-center justify-center gap-3">
+          <span class="w-12 h-[2px] bg-primary"></span>
+          Excelencia Evolucionada
+          <span class="w-12 h-[2px] bg-primary"></span>
         </p>
-        <div class="flex flex-wrap gap-4">
-          <button class="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-4 rounded-md font-semibold text-lg transition-transform hover:scale-[1.02] editorial-shadow">
-            Explore Curriculum
-          </button>
-          <button class="border-b-2 border-primary text-primary px-8 py-4 font-semibold text-lg hover:bg-primary/5 transition-colors">
-            Request Information
-          </button>
+        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-[1.1] mb-8 tracking-tight font-bold">
+          Arquitectura del <span class="text-primary italic">Mañana</span>.
+        </h1>
+        <p class="text-on-surface-variant text-xl md:text-2xl leading-relaxed mb-12 font-light">
+          Fusionamos la precisión computacional con el diseño centrado en el humano para resolver los desafíos más complejos del mundo.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="pages/plan-de-estudios.html" class="bg-primary text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-primary-container hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2">
+            Explorar Plan de Estudios <span class="material-symbols-outlined">school</span>
+          </a>
+          <a href="#presentacion" class="bg-surface-container-high text-on-surface px-10 py-5 rounded-full font-bold text-lg hover:bg-surface-variant transition-all flex items-center gap-2">
+            Más Información <span class="material-symbols-outlined">expand_more</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Presentacion oficial EPIS -->
-  <section id="presentacion" class="presentacion-home py-20 md:py-24 bg-surface-container-low border-b border-outline-variant/20">
+  <section id="presentacion" class="py-24 bg-surface border-b border-outline-variant/10 reveal">
     <div class="container mx-auto px-8">
-      <div class="presentacion-panel">
-        <div class="presentacion-head">
-          <p class="presentacion-eyebrow">Presentacion</p>
-          <h1 class="presentacion-title">Bienvenidos a la Escuela Profesional de Ingenieria de Sistemas</h1>
-          <p class="presentacion-subtitle">Facultad de Ingenieria - Universidad Privada de Tacna</p>
-          <p class="presentacion-lead">
-            Una carrera con acreditacion, mejora continua y proyeccion academica real en el sur del Peru.
-          </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Nuestra Escuela</p>
+          <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8 leading-tight">Bienvenidos a Ingeniería de Sistemas</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>
+              Somos una escuela oficialmente acreditada desde 2015 y reacreditada en 2020 por 6 años adicionales, perteneciente a una universidad licenciada por SUNEDU desde 2017.
+            </p>
+            <p>
+              Como universidad sin fines de lucro y socialmente responsable, formamos profesionales competentes con sólido sentido humanista, capacitados para contribuir al desarrollo sostenible.
+            </p>
+            <div class="grid grid-cols-2 gap-6 pt-6">
+              <div class="p-6 bg-surface-container-low rounded-3xl border border-outline-variant/10">
+                <span class="block text-3xl font-bold text-primary mb-2">2015</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Acreditación Inicial</span>
+              </div>
+              <div class="p-6 bg-surface-container-low rounded-3xl border border-outline-variant/10">
+                <span class="block text-3xl font-bold text-primary mb-2">2026</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Próxima Reacreditación</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="presentacion-body">
-          <p>
-            Somos una escuela oficialmente acreditada desde 2015 y reacreditada en 2020 por 6 anos adicionales, perteneciente a una universidad licenciada por SUNEDU desde 2017, respaldando nuestra solida trayectoria de excelencia academica y compromiso inquebrantable con la calidad educativa.
-          </p>
-          <p>
-            Como universidad sin fines de lucro y socialmente responsable, formamos profesionales competentes con solido sentido humanista, capacitados para contribuir efectivamente al desarrollo sostenible de la sociedad. Nuestra vision es convertirnos en la "Universidad referente en el sur del Peru" en la formacion integral de profesionales, investigadores y emprendedores de alta calidad.
-          </p>
-          <p>
-            Desde 2008 implementamos un proceso riguroso de mejora continua, sustentado en analisis sistematicos de nuestros procesos academicos y planes de mejora estrategicamente alineados con nuestro plan institucional 2023-2027.
-          </p>
-          <p>
-            Contamos con recursos humanos altamente calificados y comprometidos con la innovacion, la excelencia educativa y la constante adaptacion a las demandas cambiantes del entorno academico y profesional.
-          </p>
-          <p>
-            Actualmente nos preparamos con dedicacion para nuestro proximo proceso de reacreditacion en 2026, fortaleciendo continuamente nuestro liderazgo regional y consolidando nuestro posicionamiento competitivo en educacion superior tecnologica.
-          </p>
-          <p>
-            Unete a nuestra comunidad academica y construye tu futuro profesional en una institucion donde la excelencia academica, la innovacion tecnologica y la responsabilidad social convergen para formar lideres del manana.
-          </p>
-        </div>
-
-        <div class="presentacion-footer">
-          <p class="presentacion-firma">Escuela Profesional de Ingenieria de Sistemas - UPT</p>
-          <p class="presentacion-lema">Acreditada • Comprometida • Visionaria</p>
+        <div class="relative">
+          <div class="aspect-square bg-surface-container-high rounded-[48px] overflow-hidden shadow-2xl border-8 border-surface-container-low rotate-3">
+             <img src="img/img_9275.jpg" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Estudiantes EPIS">
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-[32px] shadow-xl max-w-xs border border-outline-variant/10 -rotate-3">
+            <p class="text-primary font-bold text-xl mb-2 italic">"Formando líderes en tecnología con sentido humano."</p>
+            <span class="text-xs font-bold uppercase tracking-widest opacity-50">Dirección EPIS</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 2. International Accreditation Bar -->
-  <section class="bg-surface-container-highest py-14 border-y border-outline-variant/15">
-    <div class="container mx-auto px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-10 opacity-75">
-        <span class="font-label text-sm md:text-base tracking-widest uppercase text-on-surface-variant font-bold">Global Standards Certified</span>
-        <div class="flex flex-wrap justify-center gap-14 md:gap-28 grayscale hover:grayscale-0 transition-all duration-500">
-          <div class="flex items-center gap-3">
-            <span class="font-headline text-3xl font-bold tracking-tighter">ABET</span>
-            <div class="h-8 w-[1px] bg-outline-variant"></div>
-            <span class="text-xs leading-tight font-label uppercase">Engineering<br/>Accreditation</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="font-headline text-3xl font-bold tracking-tighter italic">ICACIT</span>
-            <div class="h-8 w-[1px] bg-outline-variant"></div>
-            <span class="text-xs leading-tight font-label uppercase">Calidad en<br/>Educación</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="font-headline text-3xl font-bold tracking-tighter">SINEACE</span>
-            <div class="h-8 w-[1px] bg-outline-variant"></div>
-            <span class="text-xs leading-tight font-label uppercase">National<br/>Excellence</span>
-          </div>
+  <section class="bg-surface-container-highest py-16 border-y border-outline-variant/10 reveal">
+    <div class="container mx-auto px-8 text-center">
+      <p class="text-on-surface-variant font-bold uppercase tracking-[0.3em] text-[10px] mb-12">Estándares Globales de Calidad</p>
+      <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 hover:opacity-100 transition-opacity duration-500">
+        <div class="flex flex-col items-center gap-4 group">
+          <img src="img/icacit.png" class="h-16 w-auto grayscale group-hover:grayscale-0 transition-all duration-300" alt="ICACIT">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Acreditación ICACIT</span>
+        </div>
+        <div class="flex flex-col items-center gap-4 group">
+          <img src="img/sineace.png" class="h-16 w-auto grayscale group-hover:grayscale-0 transition-all duration-300" alt="SINEACE">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Acreditación SINEACE</span>
+        </div>
+        <div class="flex flex-col items-center gap-4 group">
+          <img src="img/sunedu.png" class="h-16 w-auto grayscale group-hover:grayscale-0 transition-all duration-300" alt="SUNEDU">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Licenciamiento SUNEDU</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. Mastering the Structural Narrative (Bento Grid) -->
-  <section class="py-24 bg-surface">
+  <!-- 3. Mastering the Structural Narrative (Bento Grid Redesigned) -->
+  <section class="py-24 bg-surface reveal">
     <div class="container mx-auto px-8">
-      <div class="mb-20 max-w-3xl">
-        <h2 class="font-headline text-4xl md:text-5xl mb-6 text-on-surface">Mastering the Structural Narrative</h2>
-        <p class="text-on-surface-variant text-lg">Four pillars of advanced engineering designed to transform theoretical complexity into operational reality.</p>
+      <div class="mb-16">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Pilares Académicos</p>
+        <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Dominando la Narrativa Estructural</h2>
+        <p class="text-on-surface-variant text-lg max-w-2xl">Cuatro pilares de ingeniería avanzada diseñados para transformar la complejidad teórica en realidad operativa.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[700px]">
-        <div class="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group overflow-hidden relative">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[700px]">
+        <!-- Item 01 -->
+        <div class="md:col-span-7 group relative bg-surface-container-low border border-outline-variant/10 rounded-[40px] p-12 overflow-hidden hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
           <div class="relative z-10">
-            <span class="text-primary font-bold text-6xl opacity-20 font-headline block mb-4">01</span>
-            <h3 class="text-3xl font-headline mb-4">Systems Optimization</h3>
-            <p class="text-on-surface-variant max-w-md leading-relaxed">Defining the backbone of scalable infrastructures through advanced algorithmic modeling and real-time feedback loops.</p>
+            <span class="text-primary font-bold text-7xl opacity-10 font-headline block mb-6">01</span>
+            <h3 class="text-3xl font-bold mb-4 text-on-surface">Optimización de Sistemas</h3>
+            <p class="text-on-surface-variant max-w-md leading-relaxed text-lg">Definiendo la columna vertebral de infraestructuras escalables mediante modelado algorítmico avanzado.</p>
           </div>
-          <div class="absolute bottom-[-10%] right-[-5%] opacity-10 group-hover:opacity-20 transition-opacity duration-700">
-            <span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'wght' 100">hub</span>
+          <div class="absolute -bottom-12 -right-12 opacity-5 group-hover:opacity-10 group-hover:scale-110 group-hover:-rotate-12 transition-all duration-700 pointer-events-none">
+            <span class="material-symbols-outlined text-[320px]" style="font-variation-settings: 'wght' 100">hub</span>
           </div>
-          <a class="mt-8 flex items-center gap-2 text-primary font-semibold tracking-tight uppercase text-sm group" href="#">
-            Explore Discipline <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+          <a href="pages/plan-de-estudios.html" class="relative z-10 mt-8 flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs group/btn">
+            Ver Disciplina <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
           </a>
         </div>
-        <div class="md:col-span-5 bg-primary-container p-12 text-on-primary-container flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+
+        <!-- Item 02 -->
+        <div class="md:col-span-5 group relative bg-primary text-white rounded-[40px] p-12 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
           <div class="relative z-10">
-            <span class="text-on-primary-container/30 font-bold text-6xl font-headline block mb-4">02</span>
-            <h3 class="text-3xl font-headline mb-4">Cyber-Physical Integration</h3>
-            <p class="opacity-90 leading-relaxed">Where the digital pulse meets physical hardware. Mastering the bridge between software intelligence and mechanical execution.</p>
+            <span class="text-white font-bold text-7xl opacity-20 font-headline block mb-6">02</span>
+            <h3 class="text-3xl font-bold mb-4">Integración Ciber-Física</h3>
+            <p class="text-white/80 leading-relaxed text-lg">Donde el pulso digital se encuentra con el hardware físico. Dominando el puente entre software y ejecución mecánica.</p>
           </div>
-          <a class="relative z-10 mt-8 flex items-center gap-2 font-semibold tracking-tight uppercase text-sm group" href="#">
-            Case Studies <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+          <div class="absolute -bottom-12 -right-12 opacity-10 group-hover:opacity-20 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 pointer-events-none">
+            <span class="material-symbols-outlined text-[320px]" style="font-variation-settings: 'wght' 100">developer_board</span>
+          </div>
+          <a href="pages/plan-de-estudios.html" class="relative z-10 mt-8 flex items-center gap-2 text-white font-bold uppercase tracking-widest text-xs group/btn">
+            Casos de Estudio <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
           </a>
         </div>
-        <div class="md:col-span-5 bg-tertiary-container p-12 text-on-tertiary-container flex flex-col justify-between">
-          <div>
-            <span class="text-on-tertiary-container/30 font-bold text-6xl font-headline block mb-4">03</span>
-            <h3 class="text-3xl font-headline mb-4">Cognitive Architecture</h3>
-            <p class="opacity-90 leading-relaxed">Simulating human decision-making processes within large-scale autonomous systems for ethical and efficient outcomes.</p>
+
+        <!-- Item 03 -->
+        <div class="md:col-span-5 group relative bg-tertiary-container text-on-tertiary-container rounded-[40px] p-12 overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div class="relative z-10">
+            <span class="text-on-tertiary-container font-bold text-7xl opacity-10 font-headline block mb-6">03</span>
+            <h3 class="text-3xl font-bold mb-4">Arquitectura Cognitiva</h3>
+            <p class="text-on-tertiary-container/80 leading-relaxed text-lg">Simulando procesos de toma de decisiones humanas dentro de sistemas autónomos a gran escala.</p>
           </div>
-          <a class="mt-8 flex items-center gap-2 font-semibold tracking-tight uppercase text-sm group" href="#">
-            Research Lab <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+          <div class="absolute -bottom-12 -right-12 opacity-5 group-hover:opacity-10 group-hover:scale-110 group-hover:-rotate-12 transition-all duration-700 pointer-events-none">
+            <span class="material-symbols-outlined text-[320px]" style="font-variation-settings: 'wght' 100">psychology</span>
+          </div>
+          <a href="pages/plan-de-estudios.html" class="relative z-10 mt-8 flex items-center gap-2 text-on-tertiary-container font-bold uppercase tracking-widest text-xs group/btn">
+            Laboratorio de I+D <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
           </a>
         </div>
-        <div class="md:col-span-7 bg-surface-container-highest p-12 flex flex-col justify-between border border-outline-variant/10">
-          <div>
-            <span class="text-on-surface-variant/20 font-bold text-6xl font-headline block mb-4">04</span>
-            <h3 class="text-3xl font-headline mb-4">Strategic Resilience</h3>
-            <p class="text-on-surface-variant max-w-md leading-relaxed">Engineering systems that don't just survive disruption, but evolve through it. The science of anti-fragility.</p>
+
+        <!-- Item 04 -->
+        <div class="md:col-span-7 group relative bg-surface-container-high border border-outline-variant/10 rounded-[40px] p-12 overflow-hidden hover:border-secondary/30 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+          <div class="relative z-10">
+            <span class="text-secondary font-bold text-7xl opacity-10 font-headline block mb-6">04</span>
+            <h3 class="text-3xl font-bold mb-4 text-on-surface">Resiliencia Estratégica</h3>
+            <p class="text-on-surface-variant max-w-md leading-relaxed text-lg">Ingeniería de sistemas que no solo sobreviven a la interrupción, sino que evolucionan a través de ella.</p>
           </div>
-          <a class="mt-8 flex items-center gap-2 text-primary font-semibold tracking-tight uppercase text-sm group" href="#">
-            Deep Dive <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+          <div class="absolute -bottom-12 -right-12 opacity-5 group-hover:opacity-10 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 pointer-events-none">
+            <span class="material-symbols-outlined text-[320px]" style="font-variation-settings: 'wght' 100">shield_with_heart</span>
+          </div>
+          <a href="pages/plan-de-estudios.html" class="relative z-10 mt-8 flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-xs group/btn">
+            Inmersión Profunda <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. Where Theory Meets the Tarmac (Faculty/Impact) -->
-  <section class="py-24 bg-surface-container-low overflow-hidden">
+  <!-- 4. Faculty / Impact -->
+  <section class="py-24 bg-surface-container-low overflow-hidden reveal">
     <div class="container mx-auto px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="relative">
-          <div class="aspect-[4/5] bg-surface overflow-hidden rounded-lg editorial-shadow">
-            <img class="w-full h-full object-cover" 
-                 data-alt="Professional engineer in a high-tech laboratory" 
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJVWr1jSn0mpuQ4a2IS0Vv2EDjH1S83WvvqKTGe88E_YOxOOzNMfkY5zlIF9UNi8FQTb2CscK1l5EK2SL64NFl6u2_gGa8n2gJSQdeFdo0OqbbKagsP1DKXcPBpe8jDI_KRQ5ugWw9N3r-a1FnOyUm_Jw89WTwoHiexdMeuI3b4TO5nkn3qoBOI1Rm1iHQtrBRJ7VTaDH6Pc3VJT5NuzmbGy9e3aqLJYy6x994Hig3YWKax7FE1QnagKf_kJ6ljXae72BYHn6EcuI"/>
+          <div class="aspect-[4/5] bg-surface-container rounded-[48px] overflow-hidden shadow-2xl border-8 border-surface-container-low">
+            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJVWr1jSn0mpuQ4a2IS0Vv2EDjH1S83WvvqKTGe88E_YOxOOzNMfkY5zlIF9UNi8FQTb2CscK1l5EK2SL64NFl6u2_gGa8n2gJSQdeFdo0OqbbKagsP1DKXcPBpe8jDI_KRQ5ugWw9N3r-a1FnOyUm_Jw89WTwoHiexdMeuI3b4TO5nkn3qoBOI1Rm1iHQtrBRJ7VTaDH6Pc3VJT5NuzmbGy9e3aqLJYy6x994Hig3YWKax7FE1QnagKf_kJ6ljXae72BYHn6EcuI"
+                 alt="Laboratorio de Sistemas">
           </div>
-          <div class="absolute -bottom-10 -right-10 bg-primary p-10 max-w-xs editorial-shadow">
-            <span class="material-symbols-outlined text-white text-4xl mb-4" style="font-variation-settings: 'FILL' 1">format_quote</span>
-            <p class="text-white text-xl font-headline leading-relaxed mb-4 italic">"We don't teach students to follow blueprints; we teach them to redefine the pen that draws them."</p>
-            <cite class="text-primary-fixed-dim font-label text-sm uppercase tracking-widest block not-italic">— Dr. Elena Vance, Head of Faculty</cite>
+          <div class="absolute -bottom-10 -right-10 bg-primary text-white p-10 rounded-[40px] shadow-2xl max-w-xs rotate-3">
+            <span class="material-symbols-outlined text-white text-5xl mb-6 opacity-40">format_quote</span>
+            <p class="text-xl font-bold leading-relaxed mb-6 italic">"No solo enseñamos a seguir planos; enseñamos a redefinir el futuro de la tecnología."</p>
+            <cite class="text-white/60 font-bold text-xs uppercase tracking-widest block not-italic">— Dirección Académica EPIS</cite>
           </div>
         </div>
         <div class="lg:pl-12">
-          <span class="text-tertiary font-label text-sm font-bold tracking-[0.2em] uppercase mb-6 block">Where Theory Meets the Tarmac</span>
-          <h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Faculty who are actively building the future they describe.</h2>
-          <ul class="space-y-12">
-            <li class="flex gap-6 group">
-              <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-primary">science</span>
+          <p class="text-tertiary font-bold uppercase tracking-widest text-sm mb-6">Investigación e Impacto</p>
+          <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8 leading-tight">Docentes que construyen el futuro.</h2>
+          
+          <div class="space-y-10">
+            <div class="flex gap-6 group">
+              <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-primary text-3xl">science</span>
               </div>
               <div>
-                <h4 class="text-xl font-headline mb-2 group-hover:text-primary transition-colors">Applied Research Focus</h4>
-                <p class="text-on-surface-variant leading-relaxed">Our faculty lead labs funded by major tech giants, ensuring students work on real-world industrial friction points.</p>
+                <h4 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Enfoque en Investigación Aplicada</h4>
+                <p class="text-on-surface-variant leading-relaxed">Nuestros docentes lideran proyectos de innovación tecnológica, asegurando que los estudiantes trabajen en problemas reales de la industria.</p>
               </div>
-            </li>
-            <li class="flex gap-6 group">
-              <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-primary">diversity_3</span>
+            </div>
+            
+            <div class="flex gap-6 group">
+              <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-secondary text-3xl">diversity_3</span>
               </div>
               <div>
-                <h4 class="text-xl font-headline mb-2 group-hover:text-primary transition-colors">1:8 Mentor Ratio</h4>
-                <p class="text-on-surface-variant leading-relaxed">Elite small-cohort learning ensures direct access to pioneers in structural engineering and cognitive systems.</p>
+                <h4 class="text-xl font-bold mb-2 group-hover:text-secondary transition-colors">Mentoría Especializada</h4>
+                <p class="text-on-surface-variant leading-relaxed">Aprendizaje personalizado con acceso directo a pioneros en ingeniería estructural y sistemas cognitivos.</p>
               </div>
-            </li>
-          </ul>
-          <button class="mt-12 bg-surface-container-highest text-primary px-10 py-4 rounded-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all">
-            Meet the Faculty
-          </button>
+            </div>
+          </div>
+          
+          <a href="pages/comites-programa.html" class="mt-12 inline-flex items-center gap-3 bg-surface-container-highest text-primary px-10 py-5 rounded-full font-bold hover:bg-primary hover:text-white transition-all">
+            Conoce a los Comités <span class="material-symbols-outlined">groups</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. Clean Editorial News/Impact -->
-  <section class="py-24 bg-surface">
+  <!-- 5. Systems Impact / News -->
+  <section class="py-24 bg-surface reveal">
     <div class="container mx-auto px-8">
-      <div class="flex justify-between items-end mb-16">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
         <div>
-          <h2 class="font-headline text-4xl mb-4">Systems Impact</h2>
-          <p class="text-on-surface-variant">Documenting the evolution of our discipline.</p>
+          <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Actualidad EPIS</p>
+          <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">Impacto de Sistemas</h2>
         </div>
-        <a class="text-primary font-semibold border-b border-primary/20 hover:border-primary transition-all pb-1 hidden md:block" href="#">View all archives</a>
+        <a href="#" class="text-primary font-bold uppercase tracking-widest text-xs border-b-2 border-primary/20 hover:border-primary transition-all pb-2 flex items-center gap-2">
+          Ver todos los archivos <span class="material-symbols-outlined text-sm">open_in_new</span>
+        </a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Article 1 -->
         <article class="group">
-          <div class="aspect-video bg-surface-container mb-6 overflow-hidden">
-            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                 data-alt="Digital grid lines over a circuit board" 
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuByfwpaea3d42x0dxpXWdk6N_pgJ1WY-1emH372r70HEHh_8ZBxLAGNVKdPgkxXMeXAEx1Bwl5ylLrlJpjaycbNRXgyAseU2pFr7s_eQLLkKGSMhS_VWCFwiFMYUdlYTjsW9TPTTByyVmGHa6CphMTw-adUqLEF40As0ZaJo3rJWCmya4Yc_qSsUV_TVkoVwibnDV5sOrzLM_IWf8XOozEXD9I3juHBZLT3Qa9eHaAzVdvUvKAVsoeL2s4pnAaH1vBFUTuqCXUcO-Q"/>
+          <div class="aspect-video bg-surface-container-high rounded-[32px] mb-8 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuByfwpaea3d42x0dxpXWdk6N_pgJ1WY-1emH372r70HEHh_8ZBxLAGNVKdPgkxXMeXAEx1Bwl5ylLrlJpjaycbNRXgyAseU2pFr7s_eQLLkKGSMhS_VWCFwiFMYUdlYTjsW9TPTTByyVmGHa6CphMTw-adUqLEF40As0ZaJo3rJWCmya4Yc_qSsUV_TVkoVwibnDV5sOrzLM_IWf8XOozEXD9I3juHBZLT3Qa9eHaAzVdvUvKAVsoeL2s4pnAaH1vBFUTuqCXUcO-Q"
+                 alt="Quantum Grid">
           </div>
-          <span class="text-tertiary text-xs font-bold uppercase tracking-tighter mb-3 block">Publication / Oct 2024</span>
-          <h3 class="text-2xl font-headline mb-4 group-hover:text-primary transition-colors">Securing the Grid: Post-Quantum Structural Integrity</h3>
-          <p class="text-on-surface-variant line-clamp-2 text-sm leading-relaxed">Exploring the vulnerabilities of municipal systems in the era of quantum computation.</p>
+          <span class="text-tertiary text-xs font-bold uppercase tracking-widest mb-4 block">Publicación / Oct 2024</span>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">Asegurando la Red: Integridad Estructural Post-Cuántica</h3>
+          <p class="text-on-surface-variant line-clamp-2 text-base leading-relaxed">Explorando las vulnerabilidades de los sistemas municipales en la era de la computación cuántica.</p>
         </article>
+        
+        <!-- Article 2 -->
         <article class="group">
-          <div class="aspect-video bg-surface-container mb-6 overflow-hidden">
-            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                 data-alt="Group of diverse engineering students collaborating" 
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIcr9mIF5_Xq6CNKOkD6w3CZVshlPyLGtGUoRZd6WRxtnWee14eDC8GOZlEcQeSKYpWSMDNCw56iUWT0FQlruKDxdcw74FXCfjLU90KkTROYPywdEwkY7SSyhtzCqDAs4E8li-8g7CFvIg9tL4uOSkIw8mLOAUOmwhWzBJ5cn0PcjpTzsSWdbtJLGagTg8bfg3H927wPMzjzBA5Cb7vSEpbtagwqOU61nb6axekfB7CemVJFp82ytnHgJMGyjiYKXxjdANu_LvgOU"/>
+          <div class="aspect-video bg-surface-container-high rounded-[32px] mb-8 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIcr9mIF5_Xq6CNKOkD6w3CZVshlPyLGtGUoRZd6WRxtnWee14eDC8GOZlEcQeSKYpWSMDNCw56iUWT0FQlruKDxdcw74FXCfjLU90KkTROYPywdEwkY7SSyhtzCqDAs4E8li-8g7CFvIg9tL4uOSkIw8mLOAUOmwhWzBJ5cn0PcjpTzsSWdbtJLGagTg8bfg3H927wPMzjzBA5Cb7vSEpbtagwqOU61nb6axekfB7CemVJFp82ytnHgJMGyjiYKXxjdANu_LvgOU"
+                 alt="Collaborating Students">
           </div>
-          <span class="text-tertiary text-xs font-bold uppercase tracking-tighter mb-3 block">Milestone / Sep 2024</span>
-          <h3 class="text-2xl font-headline mb-4 group-hover:text-primary transition-colors">The Urban Bio-Engine Project Reaches Phase 3</h3>
-          <p class="text-on-surface-variant line-clamp-2 text-sm leading-relaxed">Integrating organic filtration systems into the city's main hydraulic network.</p>
+          <span class="text-tertiary text-xs font-bold uppercase tracking-widest mb-4 block">Hito / Sep 2024</span>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">Proyecto Urban Bio-Engine alcanza Fase 3</h3>
+          <p class="text-on-surface-variant line-clamp-2 text-base leading-relaxed">Integrando sistemas de filtración orgánica en la red hidráulica principal de la ciudad.</p>
         </article>
+        
+        <!-- Article 3 -->
         <article class="group">
-          <div class="aspect-video bg-surface-container mb-6 overflow-hidden">
-            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                 data-alt="Satellite view of earth with digital data overlays" 
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxj93rML-g9bRXiCryypHmcMryOenyLdzPYqAvdF_rx2EYZF6KhB2MZTHIaPRd2CSxu73QvU1V9uJKYHDm7kpThL10ft56Daq2BegM1OulQGhZZGMB6pBNcALDJz0s4S3M_vW14XuauKoMvDPZaPWsi0oRqXYMyaiMMZG5LK9ALGnOEXp4KGISkSRbhuIpVR88ozlcqzHO7rTebkUXxd7KoYgGf-EktVZkNpr6IiQkNc5VgJJeHV8SvjGDJgEyKA_a-hU1W7yoo7M"/>
+          <div class="aspect-video bg-surface-container-high rounded-[32px] mb-8 overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxj93rML-g9bRXiCryypHmcMryOenyLdzPYqAvdF_rx2EYZF6KhB2MZTHIaPRd2CSxu73QvU1V9uJKYHDm7kpThL10ft56Daq2BegM1OulQGhZZGMB6pBNcALDJz0s4S3M_vW14XuauKoMvDPZaPWsi0oRqXYMyaiMMZG5LK9ALGnOEXp4KGISkSRbhuIpVR88ozlcqzHO7rTebkUXxd7KoYgGf-EktVZkNpr6IiQkNc5VgJJeHV8SvjGDJgEyKA_a-hU1W7yoo7M"
+                 alt="Satellite View">
           </div>
-          <span class="text-tertiary text-xs font-bold uppercase tracking-tighter mb-3 block">Global Outreach / Aug 2024</span>
-          <h3 class="text-2xl font-headline mb-4 group-hover:text-primary transition-colors">Partnering with ESA for Orbital Traffic Optimization</h3>
-          <p class="text-on-surface-variant line-clamp-2 text-sm leading-relaxed">Applying systems theory to manage the escalating debris in Low Earth Orbit.</p>
+          <span class="text-tertiary text-xs font-bold uppercase tracking-widest mb-4 block">Alcance Global / Ago 2024</span>
+          <h3 class="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">Alianza con ESA para Optimización de Tráfico Orbital</h3>
+          <p class="text-on-surface-variant line-clamp-2 text-base leading-relaxed">Aplicando teoría de sistemas para gestionar los desechos espaciales en órbita terrestre baja.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- 5. Build the Inevitable (CTA) -->
-  <section class="py-32 bg-on-surface text-surface relative overflow-hidden">
+  <!-- 6. Call to Action -->
+  <section class="py-32 bg-on-surface text-surface relative overflow-hidden reveal">
     <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
-      <svg class="w-full h-full fill-primary" viewbox="0 0 100 100">
+      <svg class="w-full h-full fill-primary" viewBox="0 0 100 100">
         <circle cx="100" cy="0" r="80"></circle>
       </svg>
     </div>
     <div class="container mx-auto px-8 relative z-10 text-center">
-      <h2 class="font-headline text-5xl md:text-7xl mb-8 tracking-tight">Build the Inevitable.</h2>
-      <p class="text-surface-variant text-xl md:text-2xl max-w-2xl mx-auto mb-16 font-light">The future is a systems problem. Be the solution. Admissions for the 2025 cohort are now open.</p>
+      <h2 class="text-5xl md:text-7xl font-headline font-bold mb-8 tracking-tight">Construye lo Inevitable.</h2>
+      <p class="text-surface-variant text-xl md:text-2xl max-w-2xl mx-auto mb-16 font-light leading-relaxed">
+        El futuro es un problema de sistemas. Sé la solución. Admisiones 2025 abiertas.
+      </p>
       <div class="flex flex-col md:flex-row justify-center gap-6">
-        <button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-md font-bold text-lg hover:scale-105 transition-transform editorial-shadow">
-          Apply Now
-        </button>
-        <button class="border border-surface-variant/30 text-surface px-12 py-5 rounded-md font-bold text-lg hover:bg-surface/10 transition-all">
-          Schedule a Visit
-        </button>
+        <a href="https://admision.upt.edu.pe/" class="bg-primary text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-primary-container hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-2">
+          Postular Ahora <span class="material-symbols-outlined">rocket_launch</span>
+        </a>
+        <a href="http://epis.upt.edu.pe/acreditacion/index.php/inicio/contactos" class="bg-white/10 text-white border border-white/20 px-12 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+          Agendar Visita <span class="material-symbols-outlined">calendar_month</span>
+        </a>
       </div>
     </div>
   </section>

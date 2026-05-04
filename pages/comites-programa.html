@@ -16,81 +16,143 @@
 <div id="app-navbar"></div>
 
 <main class="pt-0">
-  <section class="hero reveal hero-banner">
-    <div class="hero-copy">
-      <p class="eyebrow">Acreditación / Estructura del programa</p>
-      <h1>Comités del programa.</h1>
-      <p class="lead">
-        Espacio institucional para presentar los comités que apoyan la planificación, implementación, evaluación y mejora continua del programa.
-      </p>
-      <div class="hero-links">
-        <a href="#comites">Ver comités</a>
-        <a href="./mision-vision.html">Ir a misión y visión</a>
-        <a href="./objetivos-educacionales.html">Ir a OE</a>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32 reveal">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+      <div class="max-w-4xl">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Estructura Organizacional
+          <span class="w-8 h-[2px] bg-primary"></span>
+        </p>
+        <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+          Comités del <span class="text-primary">Programa</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+          Equipos estratégicos dedicados a la planificación, evaluación y mejora continua para garantizar la excelencia académica.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#comites" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-2">
+            Ver Comités <span class="material-symbols-outlined">group</span>
+          </a>
+          <a href="./mision-vision.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-variant transition-all flex items-center gap-2">
+            Misión y Visión <span class="material-symbols-outlined">rocket_launch</span>
+          </a>
+        </div>
       </div>
     </div>
-
-    <aside class="hero-aside" aria-hidden="true">
-      <div class="hero-aside-number">02</div>
-      <p>
-        La mejora continua se sostiene con trabajo colaborativo, revisión permanente y participación de la comunidad académica y externa.
-      </p>
-    </aside>
   </section>
 
-  <section id="comites" class="reveal">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Comités del programa</p>
-        <h2>Estructura de apoyo y mejora continua</h2>
-      </div>
-      <p class="committee-intro">
-        Para desarrollar las diversas actividades del programa se ha nombrado un Comité del Programa que se encargará de apoyar la planificación, implementar, evaluar y proponer acciones de mejora, considerando que todos estamos implicados en el proceso de mejora continua.
+  <!-- Comités Section -->
+  <section id="comites" class="max-w-screen-2xl mx-auto px-6 md:px-10 py-20 reveal">
+    <div class="mb-16">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Estructura de Apoyo</p>
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Nuestros Equipos de Trabajo</h2>
+      <p class="text-on-surface-variant max-w-3xl text-lg leading-relaxed">
+        El programa cuenta con comités especializados que apoyan la planificación, implementación y evaluación de procesos, involucrando a docentes, empleadores y egresados.
       </p>
     </div>
 
-    <div class="committee-grid">
-      <article class="committee-card">
-        <h3>Comité de Mejora Continua de Calidad (CMC)</h3>
-        <p>Encargado de dar soporte al seguimiento y mejora de calidad del programa.</p>
-        <ul>
-          <li><span class="committee-name">Sisa Yataco, Haydee Raquel</span><span class="committee-role">Miembro nato</span></li>
-          <li><span class="committee-name">Lanchipa Valencia, Enrique Félix</span><span class="committee-role">Secretario Técnico</span></li>
-          <li><span class="committee-name">Rodriguez Marca, Elard</span><span class="committee-role">Miembro del comité</span></li>
-        </ul>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- CMC -->
+      <article class="group relative bg-surface-container-low border border-outline-variant/10 rounded-[48px] overflow-hidden hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="p-8 md:p-10">
+          <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors leading-tight">Comité de Mejora Continua (CMC)</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+            Encargado de dar soporte al seguimiento y aseguramiento de la calidad del programa académico.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Sisa Yataco, Haydee Raquel</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Miembro nato</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Lanchipa Valencia, Enrique Félix</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Secretario Técnico</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Rodriguez Marca, Elard</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Miembro del comité</p>
+            </div>
+          </div>
+        </div>
+        <span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[160px] text-primary opacity-5 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-700 pointer-events-none" style="font-variation-settings: 'wght' 100">trending_up</span>
       </article>
 
-      <article class="committee-card">
-        <h3>Comité de Diseño Curricular</h3>
-        <p>Responsable de revisar y proponer el diseño curricular con participación de docentes, empleadores, egresados y estudiantes.</p>
-        <ul>
-          <li><span class="committee-name">Sisa Yataco, Haydee Raquel</span><span class="committee-role">Presidente (Directora EPIS)</span></li>
-          <li><span class="committee-name">Ibarra Montecinos, Mariella</span><span class="committee-role">Integrante (Docente EPIS)</span></li>
-          <li><span class="committee-name">Ale Nieto, Tito Fernando</span><span class="committee-role">Integrante (Docente EPIS)</span></li>
-          <li><span class="committee-name">Inquilla Inquilla, Luis Roberto</span><span class="committee-role">Integrante (Representante de Empleadores)</span></li>
-          <li><span class="committee-name">Quispe Pérez, Wilber</span><span class="committee-role">Integrante (Representante de Empleadores)</span></li>
-          <li><span class="committee-name">Salamanca Contreras, Fiorella Rosmery</span><span class="committee-role">Integrante (Representante de Egresados)</span></li>
-          <li><span class="committee-name">Cuadros García, Mirian</span><span class="committee-role">Integrante (Representante de Estudiantes)</span></li>
-        </ul>
+      <!-- Diseño Curricular -->
+      <article class="group relative bg-surface-container-low border border-outline-variant/10 rounded-[48px] overflow-hidden hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="p-8 md:p-10">
+          <div class="w-16 h-16 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-tertiary text-3xl">auto_stories</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors leading-tight">Comité de Diseño Curricular</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+            Responsable de revisar y actualizar el diseño curricular con la participación de diversos actores estratégicos.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-tertiary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Sisa Yataco, Haydee Raquel</h4>
+              <p class="text-xs text-tertiary font-medium mt-1 uppercase tracking-wider">Presidente (Directora EPIS)</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-tertiary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Ibarra Montecinos, Mariella</h4>
+              <p class="text-xs text-tertiary font-medium mt-1 uppercase tracking-wider">Integrante (Docente EPIS)</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-tertiary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Ale Nieto, Tito Fernando</h4>
+              <p class="text-xs text-tertiary font-medium mt-1 uppercase tracking-wider">Integrante (Docente EPIS)</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-tertiary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Luis Roberto / Wilber Quispe</h4>
+              <p class="text-xs text-tertiary font-medium mt-1 uppercase tracking-wider">Representantes de Empleadores</p>
+            </div>
+          </div>
+        </div>
+        <span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[160px] text-tertiary opacity-5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700 pointer-events-none" style="font-variation-settings: 'wght' 100">auto_stories</span>
       </article>
 
-      <article class="committee-card">
-        <h3>Comité Técnico Consultivo</h3>
-        <p>Integra especialistas externos que aportan experiencia profesional y visión del entorno laboral.</p>
-        <ul>
-          <li><span class="committee-name">Inquilla Inquilla, Luis Roberto</span><span class="committee-role">Subgerente de Tecnologías de la Información y Comunicación de Electrosur S.A.</span></li>
-          <li><span class="committee-name">Choquahuanca Torres, Silvia</span><span class="committee-role">Subgerente de TIC de la Municipalidad Distrital Gregorio Albarracín Lanchipa</span></li>
-          <li><span class="committee-name">Quispe Pérez, Wilber</span><span class="committee-role">Jefe de TIC de la Caja Municipal de Tacna</span></li>
-          <li><span class="committee-name">Laos Chatten, Michel</span><span class="committee-role">Gerente General de Data Consulting EIRL</span></li>
-          <li><span class="committee-name">Valverde Villares, Walter Elias</span><span class="committee-role">Gerente General Wanvendor S.A.C.</span></li>
-          <li><span class="committee-name">Quispe Mamani, Jose Luis</span><span class="committee-role">Clínica La Luz</span></li>
-        </ul>
+      <!-- Técnico Consultivo -->
+      <article class="group relative bg-surface-container-low border border-outline-variant/10 rounded-[48px] overflow-hidden hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="p-8 md:p-10">
+          <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors leading-tight">Comité Técnico Consultivo</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+            Integra especialistas externos que aportan experiencia profesional y visión actualizada del entorno laboral.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Inquilla Inquilla, Luis Roberto</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Electrosur - Subgerente TIC</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Choquahuanca Torres, Silvia</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">GAL - Subgerente TIC</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Quispe Pérez, Wilber</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Caja Tacna - Jefe TIC</p>
+            </div>
+            <div class="p-4 bg-surface rounded-2xl border border-outline-variant/10 group-hover:border-primary/20 transition-colors">
+              <h4 class="font-bold text-on-surface text-sm">Laos Chatten, Michel</h4>
+              <p class="text-xs text-primary font-medium mt-1 uppercase tracking-wider">Data Consulting - Gerente</p>
+            </div>
+          </div>
+        </div>
+        <span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[160px] text-primary opacity-5 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-700 pointer-events-none" style="font-variation-settings: 'wght' 100">support_agent</span>
       </article>
     </div>
-  </section>
-</main>
-
-<div id="app-footer"></div>
+   </section>
+ </main>
+  
+  <div id="app-footer"></div>
 
 <script src="../js/universal-layout.js"></script>
 <script src="../js/comites-programa.js"></script>

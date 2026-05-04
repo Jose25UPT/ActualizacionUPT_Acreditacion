@@ -17,52 +17,95 @@
   <div id="app-navbar"></div>
 
   <main class="pt-0">
-    <section class="hero reveal hero-banner">
-      <div class="hero-copy card">
-        <p class="eyebrow">Recursos / Estadisticas</p>
-        <h1>Estudiantes Matriculados y Graduados</h1>
-        <p class="lead">
-          Visualizacion estadistica oficial de la EPIS-UPT. Incluye evolucion semestral de matriculas y el resumen anual de graduados.
-        </p>
-        <div class="hero-links">
-          <a href="#grafico-1">Grafico N. 1</a>
-          <a href="#grafico-2">Grafico N. 2</a>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32 reveal">
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+        <div class="max-w-4xl">
+          <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+            <span class="w-8 h-[2px] bg-primary"></span>
+            Recursos / Estadísticas
+            <span class="w-8 h-[2px] bg-primary"></span>
+          </p>
+          <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+            Estudiantes <span class="text-primary">Matriculados</span> y Graduados
+          </h1>
+          <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+            Visualización estadística oficial de la EPIS-UPT. Incluye evolución semestral de matrículas y el resumen anual de graduados.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#grafico-1" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-2">
+              Gráfico N. 1 <span class="material-symbols-outlined">bar_chart</span>
+            </a>
+            <a href="#grafico-2" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-variant transition-all flex items-center gap-2">
+              Gráfico N. 2 <span class="material-symbols-outlined">analytics</span>
+            </a>
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <section id="estadisticas" class="max-w-screen-2xl mx-auto px-6 md:px-10 space-y-12 py-12">
+      <!-- Gráfico 1: Matriculados -->
+      <div id="grafico-1" class="reveal">
+        <div class="bg-surface-container-low rounded-[32px] border border-outline-variant/10 overflow-hidden hover:shadow-2xl transition-all duration-500">
+          <div class="p-8 border-b border-outline-variant/10 bg-surface-container">
+            <div class="flex items-center gap-4 mb-2">
+              <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+              <h2 class="text-2xl font-headline text-on-surface">Matrícula Estudiantil</h2>
+            </div>
+            <p class="text-on-surface-variant">Evolución semestral de estudiantes matriculados (2021-I a 2026-I).</p>
+          </div>
+          
+          <div class="p-8">
+            <div id="chart-matriculados" class="w-full h-[400px] mb-8"></div>
+            
+            <div class="overflow-x-auto rounded-2xl border border-outline-variant/10">
+              <table class="w-full text-left border-collapse" aria-label="Tabla de estudiantes matriculados">
+                <thead class="bg-surface-container-high">
+                  <tr>
+                    <th class="p-4 font-bold text-on-surface border-b border-outline-variant/10">Semestre</th>
+                    <th class="p-4 font-bold text-on-surface border-b border-outline-variant/10">Total Matriculados</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-matriculados" class="divide-y divide-outline-variant/10">
+                  <!-- JS Content -->
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-      <aside class="hero-aside card" aria-hidden="true">
-        <div class="hero-aside-number">11</div>
-        <p>Semestres analizados para matriculas (2021-I a 2026-I) y 6 anos para graduados (2020 a 2025).</p>
-      </aside>
-    </section>
 
-    <section id="grafico-1" class="block card reveal">
-      <h2>Grafico estadistico N. 1</h2>
-      <p class="subtitle">Estudiantes matriculados por semestre academico.</p>
-      <div id="chart-matriculados" class="chart" aria-label="Grafico de estudiantes matriculados"></div>
-      <table aria-label="Tabla de estudiantes matriculados por semestre">
-        <thead>
-          <tr>
-            <th>Semestre</th>
-            <th>Matriculados</th>
-          </tr>
-        </thead>
-        <tbody id="tbody-matriculados"></tbody>
-      </table>
-    </section>
-
-    <section id="grafico-2" class="block card reveal">
-      <h2>Grafico estadistico N. 2</h2>
-      <p class="subtitle">Graduados por ano.</p>
-      <div id="chart-graduados" class="chart" aria-label="Grafico de graduados por ano"></div>
-      <table aria-label="Tabla de graduados por ano">
-        <thead>
-          <tr>
-            <th>Ano</th>
-            <th>Graduados</th>
-          </tr>
-        </thead>
-        <tbody id="tbody-graduados"></tbody>
-      </table>
+      <!-- Gráfico 2: Graduados -->
+      <div id="grafico-2" class="reveal">
+        <div class="bg-surface-container-low rounded-[32px] border border-outline-variant/10 overflow-hidden hover:shadow-2xl transition-all duration-500">
+          <div class="p-8 border-b border-outline-variant/10 bg-surface-container">
+            <div class="flex items-center gap-4 mb-2">
+              <span class="material-symbols-outlined text-primary text-3xl">school</span>
+              <h2 class="text-2xl font-headline text-on-surface">Graduados por Año</h2>
+            </div>
+            <p class="text-on-surface-variant">Resumen anual de egresados que obtuvieron el grado académico.</p>
+          </div>
+          
+          <div class="p-8">
+            <div id="chart-graduados" class="w-full h-[400px] mb-8"></div>
+            
+            <div class="overflow-x-auto rounded-2xl border border-outline-variant/10">
+              <table class="w-full text-left border-collapse" aria-label="Tabla de graduados por año">
+                <thead class="bg-surface-container-high">
+                  <tr>
+                    <th class="p-4 font-bold text-on-surface border-b border-outline-variant/10">Año</th>
+                    <th class="p-4 font-bold text-on-surface border-b border-outline-variant/10">Total Graduados</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-graduados" class="divide-y divide-outline-variant/10">
+                  <!-- JS Content -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

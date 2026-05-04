@@ -16,94 +16,251 @@
 <div id="app-navbar"></div>
 
 <main class="pt-0">
-  <section class="hero reveal hero-banner">
-    <div class="hero-copy">
-      <p class="eyebrow">Acreditación / Atributos del graduado</p>
-      <h1>Atributos del Graduado (AT)</h1>
-      <p class="lead">
-        Conjunto de resultados medibles que describen lo que se espera que los estudiantes sepan y sean capaces de hacer al momento de la graduación.
-      </p>
-      <div class="hero-links">
-        <a href="#at">Ver atributos</a>
-        <a href="./mision-vision.html">Ir a misión y visión</a>
-        <a href="./objetivos-educacionales.html">Ir a OE</a>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32 reveal">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10 flex flex-col items-center text-center">
+      <div class="max-w-4xl">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+          <span class="w-8 h-[2px] bg-primary"></span>
+          Acreditación ICACIT
+          <span class="w-8 h-[2px] bg-primary"></span>
+        </p>
+        <h1 class="text-5xl lg:text-7xl font-headline font-bold text-on-surface leading-tight mb-8">
+          Atributos del <span class="text-primary">Graduado</span> (AT)
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+          Conjunto de resultados medibles que describen lo que nuestros estudiantes saben y son capaces de hacer al momento de su graduación.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#at" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-2">
+            Ver Atributos <span class="material-symbols-outlined">arrow_downward</span>
+          </a>
+          <a href="./objetivos-educacionales.html" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-variant transition-all flex items-center gap-2">
+            Objetivos Educacionales <span class="material-symbols-outlined">analytics</span>
+          </a>
+        </div>
       </div>
     </div>
-
-    <aside class="hero-aside" aria-hidden="true">
-      <div class="hero-aside-number">04</div>
-      <p>
-        Las habilidades, conocimientos y comportamientos se desarrollan a lo largo del programa y se expresan en once atributos medibles.
-      </p>
-    </aside>
   </section>
 
-  <section id="at" class="reveal">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">AT</p>
-        <h2>Resultados esperados del egresado</h2>
-      </div>
-      <p>
-        Cada atributo resume una capacidad clave para el desempeño profesional, ético y social del egresado.
+  <!-- AT Section -->
+  <section id="at" class="max-w-screen-2xl mx-auto px-6 md:px-10 py-20 reveal">
+    <div class="mb-16">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Perfil de Egreso</p>
+      <h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6">Nuestros 11 Atributos</h2>
+      <p class="text-on-surface-variant max-w-2xl text-lg">
+        Cada atributo resume una capacidad fundamental para el desempeño profesional, ético y social de nuestros graduados.
       </p>
     </div>
 
-    <div class="at-grid">
-      <article class="at-card">
-        <div class="at-code">[AG-I01]</div>
-        <h3>El Profesional y el Mundo</h3>
-        <p>Analiza y evalúa el impacto de las soluciones a problemas de ingeniería en el desarrollo sostenible de la sociedad, la economía, la sostenibilidad, la salud y la seguridad, los marcos legales y el medio ambiente.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- AT 01 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">01</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I01]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">El Profesional y el Mundo</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Analiza y evalúa el impacto de las soluciones a problemas de ingeniería en el desarrollo sostenible de la sociedad, la economía, la sostenibilidad y el medio ambiente.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">public</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I02]</div>
-        <h3>Ética</h3>
-        <p>Aplica los principios éticos, la ética profesional y las normas de la práctica de la ingeniería, se adhiere al marco legal pertinente y respeta la diversidad de los grupos humanos.</p>
+
+      <!-- AT 02 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-tertiary/20 font-headline text-4xl font-bold">02</span>
+            <span class="text-[10px] font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I02]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-tertiary transition-colors">Ética</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Aplica los principios éticos, la ética profesional y las normas de la práctica de la ingeniería, respetando la diversidad de los grupos humanos.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-tertiary/5 rounded-xl flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">gavel</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I03]</div>
-        <h3>Trabajo Individual y en Equipo</h3>
-        <p>Se desempeña efectivamente como individuo y como parte de un equipo, en un entorno multidisciplinar, colaborativo e inclusivo, empleando mecanismos de interacción presenciales, remotos y sus combinaciones, estableciendo metas y estrategias para cumplir sus objetivos.</p>
+
+      <!-- AT 03 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">03</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I03]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Trabajo en Equipo</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Se desempeña efectivamente como individuo y como parte de un equipo en un entorno multidisciplinar, colaborativo e inclusivo.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">groups</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I04]</div>
-        <h3>Comunicación</h3>
-        <p>Se comunica de forma efectiva en actividades de ingeniería con la comunidad de ingeniería y la sociedad en general, a través de la elaboración y comprensión de informes y documentación de diseño, y a través de la elaboración y realización de presentaciones efectivas, según el público objetivo.</p>
+
+      <!-- AT 04 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-tertiary/20 font-headline text-4xl font-bold">04</span>
+            <span class="text-[10px] font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I04]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-tertiary transition-colors">Comunicación</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Se comunica de forma efectiva en actividades de ingeniería a través de la elaboración y realización de presentaciones e informes efectivos.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-tertiary/5 rounded-xl flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">chat</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I05]</div>
-        <h3>Gestión de Proyectos</h3>
-        <p>Aplica los principios de gestión en ingeniería y la toma de decisiones económicas considerando eventuales riesgos, como miembro y líder de un equipo, para gestionar proyectos en entornos multidisciplinarios.</p>
+
+      <!-- AT 05 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">05</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I05]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Gestión de Proyectos</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Aplica los principios de gestión en ingeniería y la toma de decisiones económicas considerando eventuales riesgos para gestionar proyectos.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">assignment</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I06]</div>
-        <h3>Aprendizaje a lo largo de la vida</h3>
-        <p>Reconoce la necesidad y está preparado para aprender de forma independiente y continua, adaptarse a tecnologías nuevas y emergentes, y aplicar el pensamiento crítico en el contexto más amplio de los cambios tecnológicos.</p>
+
+      <!-- AT 06 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-tertiary/20 font-headline text-4xl font-bold">06</span>
+            <span class="text-[10px] font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I06]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-tertiary transition-colors">Aprendizaje Continuo</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Reconoce la necesidad de aprender de forma independiente, adaptarse a tecnologías nuevas y emergentes en un entorno cambiante.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-tertiary/5 rounded-xl flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">school</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I07]</div>
-        <h3>Conocimientos de Ingeniería</h3>
-        <p>Aplica conocimientos de matemáticas, ciencias naturales, computación y conocimientos fundamentales y especializados de ingeniería para desarrollar soluciones a problemas de ingeniería.</p>
+
+      <!-- AT 07 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">07</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I07]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Conocimientos</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Aplica conocimientos de matemáticas, ciencias naturales, computación y conocimientos especializados de ingeniería para soluciones complejas.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">calculate</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I08]</div>
-        <h3>Análisis de Problemas</h3>
-        <p>Identifica, busca información, caracteriza y analiza problemas de ingeniería y su contexto, llegando a conclusiones fundamentadas usando conocimientos de matemáticas, ciencias naturales y ciencias de la ingeniería desde una perspectiva holística para el desarrollo sostenible.</p>
+
+      <!-- AT 08 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-tertiary/20 font-headline text-4xl font-bold">08</span>
+            <span class="text-[10px] font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I08]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-tertiary transition-colors">Análisis de Problemas</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Identifica, caracteriza y analiza problemas de ingeniería llegando a conclusiones fundamentadas usando conocimientos de ciencias naturales.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-tertiary/5 rounded-xl flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">troubleshoot</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I09]</div>
-        <h3>Diseño y Desarrollo de Soluciones</h3>
-        <p>Diseña soluciones creativas para problemas de ingeniería y diseña sistemas, componentes o procesos para satisfacer necesidades identificadas dentro de restricciones realistas, según se requiera, de salud y seguridad pública, el costo del ciclo de vida, el cero carbono neto, de recursos, culturales, sociales, económicas y ambientales.</p>
+
+      <!-- AT 09 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">09</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I09]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Diseño de Soluciones</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Diseña soluciones creativas para problemas de ingeniería y diseña sistemas o procesos para satisfacer necesidades identificadas.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">architecture</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I10]</div>
-        <h3>Indagación</h3>
-        <p>Conduce indagaciones de problemas de ingeniería usando métodos de investigación incluyendo conocimiento basado en investigación, diseño y conducción de experimentos, análisis e interpretación de datos y síntesis de información para producir conclusiones válidas de experimentos, el análisis y la interpretación de información, y la síntesis de información para producir conclusiones válidas.</p>
+
+      <!-- AT 10 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-tertiary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-tertiary/20 font-headline text-4xl font-bold">10</span>
+            <span class="text-[10px] font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I10]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-tertiary transition-colors">Indagación</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Conduce indagaciones de problemas de ingeniería usando métodos de investigación y análisis de datos para producir conclusiones válidas.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-tertiary/5 rounded-xl flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">biotech</span>
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="at-card">
-        <div class="at-code">[AG-I11]</div>
-        <h3>Uso de Herramientas</h3>
-        <p>Crea, selecciona, aplica y reconoce las limitaciones de las técnicas, recursos y herramientas modernas apropiadas de ingeniería y tecnologías de la información, incluyendo la predicción y el modelado, en problemas de ingeniería.</p>
+
+      <!-- AT 11 -->
+      <article class="group relative overflow-hidden bg-surface-container-low border border-outline-variant/10 p-8 rounded-[32px] hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="flex justify-between items-start mb-6">
+            <span class="text-primary/20 font-headline text-4xl font-bold">11</span>
+            <span class="text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full uppercase tracking-wider">[AG-I11]</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">Uso de Herramientas</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+            Aplica técnicas y herramientas modernas apropiadas de ingeniería y tecnologías de la información en problemas de ingeniería complejos.
+          </p>
+          <div class="flex justify-end">
+            <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <span class="material-symbols-outlined text-2xl">construction</span>
+            </div>
+          </div>
+        </div>
       </article>
     </div>
   </section>
